@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/hamburger.scss"
+    ],
+    "names": [],
+    "file": "hamburger.min.css"
+}

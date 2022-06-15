@@ -1,0 +1,70 @@
+$main-color:#7000eb;
+$dark: #000;
+$light: #fff;
+$text-color: #444;
+$main-transition: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+$gradient-background: linear-gradient(145deg, #333399 0%, #ff00cc 100%);
+
+@mixin button {
+  display: inline-block;
+  text-transform: uppercase;
+  background: $gradient-background;
+  color: $light;
+  letter-spacing: 1px;
+  font-size: 18px;
+  border-radius: 40px;
+  padding: 15px 30px;
+  font-weight: 700;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transform: translateZ(0);
+
+  &:before {
+		pointer-events: none;
+	  position: absolute;
+	  z-index: -1;
+	  content: '';
+	  top: 100%;
+	  left: 5%;
+	  height: 10px;
+	  width: 90%;
+	  opacity: 0;
+	  background: radial-gradient(ellipse at center, rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 80%); /* W3C */
+		transition-duration: .3s;
+		transition-property: transform opacity;
+	}
+
+	&:hover {
+		transform: translateY(-5px); /* move the element up by 5px */
+
+		&:before {
+			opacity: 1;
+			transform: translateY(5px); /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+		}
+	}
+
+}
+
+@mixin gradient-text {
+  background: #16BFFD;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399 0%, #ff00cc 100%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333399 0%, #ff00cc 100%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Hamburger Variables
+$size: 80px;
+$height: 20px;
+$width: 30px;
+$line-size: 3px;
+$line-color: #47c9af;
+$line-radius: $line-size;
+$to-translate: ($height - $line-size) / 2;
+$bounce: cubic-bezier(0.87, -0.5, 0.19, 1.5);
