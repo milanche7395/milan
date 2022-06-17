@@ -21,7 +21,6 @@ $(document).ready(function () {
         $(".preloader").fadeOut("slow");
     }, 2000);*/
 
-
     // Portfolio
     $('.filters ul li').click(function () {
         $('.filters ul li').removeClass('active');
@@ -42,23 +41,28 @@ $(document).ready(function () {
     })
 
     //   popup 
-    $(document).ready(function () {
-        $(".gallery").magnificPopup({
-            delegate: "a",
-            type: "image",
-            tLoading: "Loading image #%curr%...",
-            mainClass: "mfp-img-mobile",
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-            },
-            image: {
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-            }
-        });
+    $(".gallery").magnificPopup({
+        delegate: "a",
+        type: "image",
+        tLoading: "Loading image #%curr%...",
+        mainClass: "mfp-img-mobile",
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
     });
-    $(window).resize(function(){
+
+    var years = new Date().getFullYear() - 2007;
+    $('.years').text(years);
+
+    var year = new Date().getFullYear()
+    $('.currentyear').text(year);
+
+    $(window).resize(function () {
         clickNav();
     })
 
@@ -66,13 +70,14 @@ $(document).ready(function () {
 
 });
 
-function clickNav(){
+
+function clickNav() {
     if ($(window).width() < 1200) {
         $("nav ul li a").click(function () {
             $('.navigation').removeClass('active');
             $('.menu--close5').removeClass('open');
         });
-    } else{
+    } else {
         $('.navigation').removeClass('active');
         $('.menu--close5').removeClass('open');
     }
