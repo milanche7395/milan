@@ -973,7 +973,7 @@ p {
 // Slider
 
 @mixin white-gradient {
-    background: linear-gradient(to right, rgba(236, 238, 246, 1) 0%, rgba(236, 238, 246, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(236, 238, 246, 0) 100%);
 }
 
 $animationSpeed: 30s;
@@ -994,7 +994,6 @@ $animationSpeed: 30s;
 .clients {
     padding: 60px 0;
     margin: 60px 0;
-    background: #eceef6;
 
     h2 {
         margin-bottom: 40px;
