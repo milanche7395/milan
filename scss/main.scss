@@ -79,7 +79,6 @@ h2 {
     margin: 0 auto;
     margin-bottom: 60px;
     line-height: 120%;
-
 }
 
 .btn {
@@ -192,8 +191,6 @@ h2 {
             width: 261px;
             transition-delay: .1s;
         }
-
-
     }
 
     &.active {
@@ -327,7 +324,6 @@ header {
                         transform-origin: right;
                         transform: scaleX(0);
                         transition: $main-transition;
-
                     }
 
                     &:hover:before {
@@ -341,7 +337,7 @@ header {
 
     .hire-me {
         @include button;
-        padding: 15px 40px;
+        padding: 18px 40px;
         margin-right: 25px;
         font-size: 16px;
     }
