@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="scss/magnific-popup.min.css">
     <title>Milan Nikolić | Web Developer and Grapchic Designer</title>
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("contact-form").submit();
+        }
+      </script>
+
 </head>
 
 <body>
@@ -63,7 +70,7 @@
         </div>
     </div>
     <header>
-        <div class="container-xxl container-fluid container-holder">
+        <div class="container container-holder">
             <div class="logo">Milan<span>.</span></div>
             <div class="navigation">
                 <nav>
@@ -91,7 +98,6 @@
     <section id="home" class="home">
         <div class="container">
             <div class="row">
-                
                 <div class="col-lg-6">
                     <h1><span class="gradient-text">I design & build</span>
                         digital products<span>.</span></h1>
@@ -114,7 +120,7 @@
                         <img class="javascript" src="img/javascript.svg" alt="">
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -123,19 +129,13 @@
         <img class="shape" src="img/shape.svg" alt="">
         <div class="container">
             <div class="row">
-                
                 <div class="col-md-6 pe-4 about-img">
-                    <div class="row">
-                        <!-- http://innovationplans.com/wavo3/index-2-dark.html -->
-                        <div class="col-6"><img class="img-fluid" src="http://placehold.jp/330x380.png" alt="">
-                        <span>15 Years of Experience</span></div>
-                        <div class="col-6"><img style="margin-top: 30px;" class="img-fluid" src="http://placehold.jp/330x400.png" alt=""></div>
-                    </div>
+                    <img src="img/milan-nikolic.webp" alt="Milan Nikolic">
                 </div>
                 <div class="col-md-6 ps-4">
                     <span class="tagline">About me</span>
                     <h2>In the business <span class="gradient-text">since 2007</span></h2>
-
+                    <!--
                     <p>Over the past <span class="years"></span> years, I've worked with a diverse range of clients, from startups to Fortune 500
                         companies. I love crafting interfaces that delight users and help businesses grow.</p>
                     <p>My most recent position was as an interactive designer at a large corporation where I was
@@ -143,7 +143,36 @@
                         for designing assets for
                         marketing campaigns, landing
                         pages and apps for Android and iOS devices. </p>
-                    <img class="signature" src="img/signature.png" alt="">
+                    <img class="signature" src="img/signature.png" alt=""> -->
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">About Me</a>
+                            <a class="nav-link" id="nav-education-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-education" role="tab" aria-controls="nav-education"
+                                aria-selected="false">Education</a>
+                            <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-design"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Design</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <p>Over the past <span class="years"></span> years, I've worked with a diverse range of
+                                clients, from startups to Fortune 500
+                                companies. I love crafting interfaces that delight users and help businesses grow.</p>
+                            <p>My most recent position was as an interactive designer at a large corporation where I was
+                                responsible
+                                for designing assets for
+                                marketing campaigns, landing
+                                pages and apps for Android and iOS devices. </p>
+                            <img class="signature" src="img/signature.png" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="nav-education" role="tabpanel"
+                            aria-labelledby="nav-education-tab">Drugi</div>
+                        <div class="tab-pane fade" id="nav-design" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            Treći</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -392,7 +421,7 @@
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
-                   <img src="img/clients/smiljkaboskov.webp" alt="Smiljka Boškov Photography">
+                    <img src="img/clients/smiljkaboskov.webp" alt="Smiljka Boškov Photography">
                 </div>
                 <div class="slide">
                     Krojač
@@ -442,17 +471,99 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact mb-5" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <span class="tagline">Get in Touch</span>
                     <h2>Contact me</h2>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Serbia, Belgrade</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p><a href="tel:+381637395202">+381 63 73 95 202</a></p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p><a href="mailto:contact@milan-nikolic.com">contact@milan-nikolic.com</a></p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-md-8">
                     <span class="tagline">Drop a line</span>
                     <h2>Send me a message</h2>
+                    <!--Section description-->
+                    <p class="w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate
+                        to contact me directly. I will come back to you within
+                        a matter of hours to help you.</p>
+
+
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="mb-4 form-holder">
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="mb-4 form-holder">
+                                    <input type="text" id="email" name="email" class="form-control" required>
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-4 form-holder">
+                                    <input type="text" id="subject" name="subject" class="form-control" required>
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12 mb-4 form-holder message">
+
+                                <textarea type="text" id="message" name="message" rows="2"
+                                    class="form-control md-textarea" required></textarea>
+                                <label for="message">Your message</label>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div>
+                        <!-- <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> -->
+                        <a class="btn contact-btn" onclick="validateForm();" class="g-recaptcha" 
+                        data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit' data-action='submit'>Send</a>
+                        <div class="status"></div>
+                    </div>
+                    
                 </div>
+                <!--Grid column-->
+
+
             </div>
         </div>
     </section>
@@ -471,17 +582,18 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119148481-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-119148481-1');
+        gtag('config', 'UA-119148481-1');
     </script>
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
 
