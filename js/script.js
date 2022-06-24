@@ -68,6 +68,9 @@ $(document).ready(function () {
 
     clickNav();
 
+    // Selected Page
+    //$('#nav').onePageNav();
+
 });
 
 
@@ -89,7 +92,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 80
-    }, 0);
+    }, 1);
 });
 
 // Scroll Bar Progress
@@ -111,9 +114,9 @@ $('body').on('click', '.menu', function () {
     $(".navigation").toggleClass("active");
 });
 
-/* Forbidden Sign */
-/*
-  $("body").contextmenu(function () {
+/* Disabled Right Click */
+
+/*$("body").contextmenu(function () {
     event.preventDefault();
     $(this).addClass("active");
     setTimeout(function() {
@@ -141,31 +144,31 @@ document.onkeydown = function (event) {
 
 // Contact Validation Form
 function validateForm() {
-    var name =  document.getElementById('name').value;
+    var name = document.getElementById('name').value;
     if (name == "") {
         document.querySelector('.status').innerHTML = "Name cannot be empty";
         return false;
     }
-    var email =  document.getElementById('email').value;
+    var email = document.getElementById('email').value;
     if (email == "") {
         document.querySelector('.status').innerHTML = "Email cannot be empty";
         return false;
     } else {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!re.test(email)){
+        if (!re.test(email)) {
             document.querySelector('.status').innerHTML = "Email format invalid";
             return false;
         }
     }
-    var subject =  document.getElementById('subject').value;
+    var subject = document.getElementById('subject').value;
     if (subject == "") {
         document.querySelector('.status').innerHTML = "Subject cannot be empty";
         return false;
     }
-    var message =  document.getElementById('message').value;
+    var message = document.getElementById('message').value;
     if (message == "") {
         document.querySelector('.status').innerHTML = "Message cannot be empty";
         return false;
     }
     document.querySelector('.status').innerHTML = "Sending...";
-  }
+}
