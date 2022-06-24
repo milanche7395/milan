@@ -68,8 +68,9 @@ $(document).ready(function () {
 
     clickNav();
 
-    // Selected Page
-    //$('#nav').onePageNav();
+    $('#nav').onePageNav({
+       scrollSpeed: 0
+    });
 
 });
 
