@@ -12,9 +12,9 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         function onSubmit(token) {
-          document.getElementById("contact-form").submit();
+            document.getElementById("contact-form").submit();
         }
-      </script>
+    </script>
 
 </head>
 
@@ -64,6 +64,7 @@
         </div>
 
     </div>-->
+
     <div class="progress-holder">
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
@@ -95,6 +96,7 @@
             </div>
         </div>
     </header>
+
     <section id="home" class="home">
         <div class="container">
             <div class="row">
@@ -131,19 +133,14 @@
             <div class="row">
                 <div class="col-md-6 pe-4 about-img">
                     <img class="img-fluid" src="img/milan-nikolic.webp" alt="Milan Nikolic">
+                    <div class="experience">
+                        <span class="years"></span>
+                        <span class="experience-text">Year of Experience</span>
+                    </div>
                 </div>
                 <div class="col-md-6 ps-4">
                     <span class="tagline">About me</span>
                     <h2>In the business <span class="gradient-text">since 2007</span></h2>
-                    <!--
-                    <p>Over the past <span class="years"></span> years, I've worked with a diverse range of clients, from startups to Fortune 500
-                        companies. I love crafting interfaces that delight users and help businesses grow.</p>
-                    <p>My most recent position was as an interactive designer at a large corporation where I was
-                        responsible
-                        for designing assets for
-                        marketing campaigns, landing
-                        pages and apps for Android and iOS devices. </p>
-                    <img class="signature" src="img/signature.png" alt=""> -->
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -151,28 +148,62 @@
                             <a class="nav-link" id="nav-education-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-education" role="tab" aria-controls="nav-education"
                                 aria-selected="false">Education</a>
-                            <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-design"
-                                role="tab" aria-controls="nav-contact" aria-selected="false">Design</a>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab">
-                            <p>Over the past <span class="years"></span> years, I've worked with a diverse range of  clients, from startups to Fortune 500 companies. I love crafting interfaces that delight users and help businesses grow.</p>
-                            <p>My most recent position was as an interactive designer at a large corporation where I was responsible for designing assets for marketing campaigns, landing pages and apps for Android and iOS devices. </p>
+                            <p>Over the past <span class="years"></span> years, I've worked with a diverse range of
+                                clients, from startups to Fortune 500 companies. I love crafting interfaces that delight
+                                users and help businesses grow.</p>
+                            <p>My most recent position was as an interactive designer at a large corporation where I was
+                                responsible for designing assets for marketing campaigns, landing pages and apps for
+                                Android and iOS devices. </p>
                             <img class="signature" src="img/signature.png" alt="">
                         </div>
                         <div class="tab-pane fade" id="nav-education" role="tabpanel"
-                            aria-labelledby="nav-education-tab">Drugi</div>
-                        <div class="tab-pane fade" id="nav-design" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            Treći</div>
+                            aria-labelledby="nav-education-tab">
+                            <div class="tab-holder">
+                                <div class="year">
+                                    2001 2005
+                                </div>
+                                <p>
+                                    Electrotechnical High School “Nada Dimić”
+                                    <span>
+                                        Computer Technician
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="tab-holder">
+                                <div class="year">
+                                    2005 2009
+                                </div>
+                                <p>
+                                    Singidunum University
+                                    <span>
+                                        Information Systems Engineer
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="tab-holder">
+                                <div class="year">
+                                    2009 Now
+                                </div>
+                                <p>
+                                    Daily Self Education
+                                    <span>
+                                        Courses & Internet
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="services" class="services">
+
         <div class="container">
             <div class="row">
                 <div class="col-12 title">
@@ -466,6 +497,19 @@
     </section>
 
     <section class="contact mb-5" id="contact">
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
+            class="transition duration-300 ease-in-out delay-150">
+            <defs>
+                <linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                    <stop offset="5%" stop-color="#f2f2f2ff"></stop>
+                    <stop offset="95%" stop-color="#ffffffff"></stop>
+                </linearGradient>
+            </defs>
+            <path
+                d="M 0,400 C 0,400 0,200 0,200 C 206.13333333333333,183.33333333333331 412.26666666666665,166.66666666666666 568,168 C 723.7333333333333,169.33333333333334 829.0666666666668,188.66666666666669 966,197 C 1102.9333333333332,205.33333333333331 1271.4666666666667,202.66666666666666 1440,200 C 1440,200 1440,400 1440,400 Z"
+                stroke="none" stroke-width="0" fill="url(#gradient)"
+                class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        </svg>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -549,11 +593,12 @@
 
                     <div>
                         <!-- <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> -->
-                        <a class="btn contact-btn" onclick="validateForm();" class="g-recaptcha" 
-                        data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit' data-action='submit'>Send</a>
+                        <a class="btn contact-btn" onclick="validateForm();" class="g-recaptcha"
+                            data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit'
+                            data-action='submit'>Send</a>
                         <div class="status"></div>
                     </div>
-                    
+
                 </div>
                 <!--Grid column-->
 
@@ -566,6 +611,44 @@
             <small>Milan Nikolic © 2007-<span class="currentyear"></span>. All rights Reserved.</small>
         </div>
     </footer>
+
+    <div class="social-holder">
+        <div class="button-social">Let's connect</div>
+        <div class="links">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/mnikolic1/">
+                        <img src="img/linkedin.svg" class="linkedin" alt="Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/milanche7395/">
+                        <img src="img/facebook.svg" class="facebook" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/milanche7395/">
+                        <img src="img/instagram.svg" class="instagram" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/+381637395202">
+                        <img src="img/whatsup.svg" class="whatsup" alt="Whatsup">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://m.me/milanche7395">
+                        <img src="img/messinger.svg" class="messinger" alt="Messinger">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="skype:milanche7395?chat">
+                        <img src="img/skype.svg" class="skype" alt="Skype"></a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
 
     <div class="right-click">
         <img src="img/forbidden.svg" alt="">

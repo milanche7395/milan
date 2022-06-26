@@ -9,11 +9,41 @@ html {
     overflow-x: hidden;
 }
 
+
+
 a {
     color: $main-color;
 
     &:hover {
         color: $main-color;
+    }
+}
+
+.path-0 {
+    animation: pathAnim-0 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pathAnim-0 {
+    0% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 206.13333333333333,183.33333333333331 412.26666666666665,166.66666666666666 568,168 C 723.7333333333333,169.33333333333334 829.0666666666668,188.66666666666669 966,197 C 1102.9333333333332,205.33333333333331 1271.4666666666667,202.66666666666666 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    25% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 118.80000000000001,224.26666666666665 237.60000000000002,248.53333333333333 397,235 C 556.4,221.46666666666667 756.4000000000001,170.13333333333333 937,158 C 1117.6,145.86666666666667 1278.8,172.93333333333334 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    50% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 126.66666666666669,193.06666666666666 253.33333333333337,186.13333333333335 419,183 C 584.6666666666666,179.86666666666665 789.3333333333333,180.53333333333336 966,184 C 1142.6666666666667,187.46666666666664 1291.3333333333335,193.73333333333332 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    75% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 128.53333333333336,167.46666666666667 257.0666666666667,134.93333333333334 437,126 C 616.9333333333333,117.06666666666668 848.2666666666667,131.73333333333335 1024,148 C 1199.7333333333333,164.26666666666665 1319.8666666666668,182.13333333333333 1440,200 C 1440,200 1440,400 1440,400 Z");
+    }
+
+    100% {
+        d: path("M 0,400 C 0,400 0,200 0,200 C 206.13333333333333,183.33333333333331 412.26666666666665,166.66666666666666 568,168 C 723.7333333333333,169.33333333333334 829.0666666666668,188.66666666666669 966,197 C 1102.9333333333332,205.33333333333331 1271.4666666666667,202.66666666666666 1440,200 C 1440,200 1440,400 1440,400 Z");
     }
 }
 
@@ -62,6 +92,76 @@ body {
         40%,
         60% {
             transform: translate3d(4px, 0, 0);
+        }
+    }
+}
+
+.social-holder {
+    position: fixed;
+    bottom:0px;
+    right: -51px;
+    z-index: 99;
+    transition: $main-transition;
+
+    &.active{
+        right: 0;
+
+        .button-social{
+            background: $gradient-background;
+        }
+    }
+
+    .button-social {
+        background: #b5b5b5;
+        color: $light;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 9px 14px;
+        border-radius: 0px 10px 0 0;
+        text-transform: uppercase;
+        transform: rotate(-90deg) translate(-204px, 50px);
+        float: left;
+        cursor: pointer;
+
+        &:hover{
+            background: $gradient-background;
+        }
+    }
+
+    .links {
+        float: left;
+        background: #f1f1f1;
+        padding: 10px 5px;
+        border-radius: 20px 0px 0 0;
+
+        ul {
+            li {
+                margin-bottom: 10px;
+                text-align: center;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                img {
+                    width: 35px;
+                    height: auto;
+                    filter: grayscale(1);
+                    transition: $main-transition;
+
+                    &:hover{
+                        filter: grayscale(0);
+                    }
+                    &.linkedin{
+                        width: 32px;
+                    }
+                    &.whatsup{
+                        width: 42px;
+                    }
+
+                    &.skype{
+                        width: 38px;
+                    }
+                }
+            }
         }
     }
 }
@@ -304,6 +404,9 @@ header {
                     margin-right: 0px;
                 }
 
+                &:hover>ul {
+                    opacity: 0.3;
+                }
 
                 a {
                     color: $dark;
@@ -319,21 +422,24 @@ header {
                         height: 4px;
                         border-radius: 4px;
                         background: $gradient-background;
-                        bottom: -5px;
+                        bottom: -3px;
                         left: 0;
                         transform-origin: right;
                         transform: scaleX(0);
-                        transition: $main-transition;
+                        transition: transform .3s ease-in-out;
                     }
 
                     &:hover:before {
                         transform-origin: left;
                         transform: scaleX(1);
                     }
+
                 }
 
                 &.current {
                     a {
+                        color: $main-color;
+
                         &:before {
                             content: '';
                             position: absolute;
@@ -341,11 +447,11 @@ header {
                             height: 4px;
                             border-radius: 4px;
                             background: $gradient-background;
-                            bottom: -5px;
+                            bottom: -3px;
                             left: 0;
                             transform-origin: left;
                             transform: scaleX(1);
-                            transition: $main-transition;
+                            transition: transform .3s ease-in-out;
                         }
                     }
                 }
@@ -727,7 +833,6 @@ p {
     margin-bottom: 40px;
 }
 
-
 .about {
     background-position: top right;
     background-size: auto;
@@ -780,10 +885,37 @@ p {
             border-radius: 30px;
         }
 
+        .experience {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            z-index: 5;
+
+            .years {
+                font-size: 80px;
+                font-weight: 800;
+                color: $main-color;
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+            }
+
+            .experience-text {
+                font-weight: 600;
+                font-size: 24px;
+                color: #000;
+                width: 50%;
+                display: inline-block;
+                text-shadow: 0 0 20px #fff;
+                position: relative;
+                top: -10px;
+                left: 0px;
+            }
+        }
+
         img {
             border-radius: 30px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
             position: relative;
+            border: 6px solid transparent;
             z-index: 4;
         }
     }
@@ -833,11 +965,11 @@ p {
                 height: 3px;
                 border-radius: 4px;
                 background: $gradient-background;
-                bottom: -5px;
+                bottom: -3px;
                 left: 0;
                 transform-origin: right;
                 transform: scaleX(0);
-                transition: $main-transition;
+                transition: transform .3s ease-in-out;
             }
 
             &:hover:before {
@@ -848,7 +980,6 @@ p {
             &:hover {
                 color: $main-color;
             }
-
         }
 
         &.nav-item {
@@ -869,6 +1000,32 @@ p {
     margin-bottom: 20px;
 }
 
+.tab-holder {
+    display: flex;
+    flex-direction: row;
+
+    .year {
+        font-size: 20px;
+        line-height: 26px;
+        width: 55px;
+    }
+
+    p {
+        padding-right: 0;
+        padding-top: 1px;
+        margin-left: 20px;
+        font-size: 16px;
+        padding-left: 20px;
+        border-left: 3px solid $main-color;
+
+        span {
+            font-weight: 600;
+            display: block;
+            font-size: 18px;
+        }
+    }
+}
+
 .signature {
 
     margin-right: 120px;
@@ -880,6 +1037,8 @@ p {
     overflow: visible;
     padding-top: 100px;
 
+
+
     &:before {
         content: '';
         width: 100%;
@@ -887,7 +1046,7 @@ p {
         position: absolute;
         top: 0px;
         z-index: -2;
-        background: url(../../img/my-services.svg) no-repeat;
+        //background: url(../../img/my-services.svg) no-repeat;
     }
 
     .container {
@@ -1156,6 +1315,17 @@ $animationSpeed: 30s;
 }
 
 .contact {
+    position: relative;
+    padding: 80px 0;
+    overflow: visible;
+
+    #svg {
+        position: absolute;
+        top: -47%;
+        left: 0;
+        z-index: -1;
+    }
+
     h2 {
         text-align: left;
         margin-bottom: 20px;
@@ -1250,6 +1420,8 @@ $animationSpeed: 30s;
         font-weight: 600;
     }
 }
+
+
 
 footer {
     text-align: center;
