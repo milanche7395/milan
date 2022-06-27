@@ -898,10 +898,20 @@ p {
             width: 400px;
             height: 560px;
             margin-right: 20px;
+            position: relative;
             float: right;
             overflow: hidden;
             border-radius: 30px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+
+            img{
+                filter: grayscale(1) brightness(1.5);
+                transition: $main-transition;
+
+                &:hover{
+                    filter: grayscale(0) brightness(1);
+                }
+            }
         }
 
 
