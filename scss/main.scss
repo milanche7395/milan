@@ -52,6 +52,9 @@ body {
     color: $dark;
     overflow-x: hidden;
     position: relative;
+    background: url(../../img/blob.svg) no-repeat;
+    background-position: 0 0;
+    background-size: cover;
 
     &.active {
         animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
@@ -585,9 +588,6 @@ header {
 .home {
     position: relative;
     overflow: hidden;
-    background: url(../../img/about-shapes.png) no-repeat;
-    background-position: top right;
-    background-size: auto;
 
     &::after {
         content: '';
@@ -932,10 +932,11 @@ p {
         .nav-link {
             cursor: pointer;
             display: inline-block;
-            padding: 0 0 3px 0;
+            padding: 10px 15px;
             border: none;
-            font-weight: 600;
-            color: #646464;
+            border-radius: 100vmax;
+            font-weight: 400;
+            color: #363636;
             position: relative;
             margin-right: 20px;
             transition: .3s color cubic-bezier(0.25, 1, 0.5, 1);
@@ -946,43 +947,20 @@ p {
 
             &.active {
                 border: none;
-                color: $main-color;
-                background: none;
-
-                &:before {
-                    transform-origin: left;
-                    transform: scaleX(1);
-                }
+                color: $light;
+                background: $gradient-background;
             }
 
             &:visited,
             &:focus {
                 border: none;
-                padding: 0;
                 outline: none;
             }
 
-            &:before {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 3px;
-                border-radius: 4px;
-                background: $gradient-background;
-                bottom: -3px;
-                left: 0;
-                transform-origin: right;
-                transform: scaleX(0);
-                transition: transform .3s ease-in-out;
-            }
-
-            &:hover:before {
-                transform-origin: left;
-                transform: scaleX(1);
-            }
-
             &:hover {
-                color: $main-color;
+                border: none;
+                color: $light;
+                background: $gradient-background;
             }
         }
 
@@ -1254,63 +1232,6 @@ $animationSpeed: 30s;
     }
 }
 
-
-// Styling
-.clients {
-    padding: 60px 0;
-    margin: 60px 0;
-
-    h2 {
-        margin-bottom: 40px;
-    }
-
-
-    .slider {
-        height: 100px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-
-        &::before,
-        &::after {
-            @include white-gradient;
-            content: "";
-            height: 100px;
-            position: absolute;
-            width: 200px;
-            z-index: 2;
-        }
-
-        &::after {
-            right: 0;
-            top: 0;
-            transform: rotateZ(180deg);
-        }
-
-        &::before {
-            left: 0;
-            top: 0;
-        }
-
-        .slide-track {
-            animation: scroll $animationSpeed linear infinite;
-            display: flex;
-            width: calc(250px * 14);
-        }
-
-        .slide {
-            height: 100px;
-            width: 250px;
-            color: $dark;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 26px;
-            font-weight: 700;
-        }
-    }
-}
 
 .contact {
     position: relative;
