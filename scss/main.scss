@@ -173,7 +173,8 @@ body {
 
 span.tagline {
     @include gradient-text;
-    font-size: 22px;
+    font-size: 18px;
+    text-transform: uppercase;
     display: block;
     font-weight: 600;
 }
@@ -186,6 +187,9 @@ h2 {
     margin: 0 auto;
     margin-bottom: 60px;
     line-height: 120%;
+    span{
+        font-weight: 300;
+    }
 }
 
 .btn {
@@ -585,6 +589,18 @@ header {
     background-position: top right;
     background-size: auto;
 
+    &::after {
+        content: '';
+        width: 100%;
+        height: 185px;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+        background: linear-gradient(to right bottom, #fff 49%, #fcf8ff 50%);
+    }
+
     .container {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -823,6 +839,7 @@ h1 {
 
     .gradient-text {
         @include gradient-text;
+        font-weight: 300;
     }
 
     span {
@@ -839,36 +856,23 @@ p {
 }
 
 .about {
-    background-position: top right;
-    background-size: auto;
+    background: #fcf8ff;
     position: relative;
     overflow: visible;
     padding: 80px 0;
 
-    .shape {
+    &::after {
+        content: '';
+        width: 100%;
+        height: 185px;
+        width: 100%;
+        height: 100px;
         position: absolute;
-        z-index: -1;
-        right: -80px;
-        top: -150px;
-        width: 45%;
-        animation: shaperotate linear infinite 35s;
+        left: 0px;
+        bottom: -100px;
+        background: linear-gradient(to left top, #fff 49%, #fcf8ff 50%);
     }
 
-    // Animation
-    @keyframes shaperotate {
-        0% {
-            transform: rotate(0deg);
-        }
-
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    .gradient-text {
-        @include gradient-text;
-        display: block;
-    }
 
     h2 {
         text-align: left;
@@ -904,11 +908,11 @@ p {
             border-radius: 30px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 
-            img{
+            img {
                 filter: grayscale(1) brightness(1.5);
                 transition: $main-transition;
 
-                &:hover{
+                &:hover {
                     filter: grayscale(0) brightness(1);
                 }
             }
@@ -923,7 +927,7 @@ p {
 
     .nav-tabs {
         border: none;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         .nav-link {
             cursor: pointer;
@@ -1103,8 +1107,13 @@ p {
         margin-top: 80px;
         text-align: center;
 
+        .tagline {
+            text-align: left;
+        }
+
         h2 {
             margin-bottom: 30px;
+            text-align: left;
         }
     }
 
@@ -1133,6 +1142,8 @@ p {
 
     .filters {
         text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
 
         ul {
             padding: 0;
@@ -1140,32 +1151,19 @@ p {
             li {
                 list-style: none;
                 display: inline-block;
-                padding: 20px 30px;
+                padding: 10px 20px;
                 cursor: pointer;
                 position: relative;
-
-                &:after {
-                    content: "";
-                    display: block;
-                    width: calc(0% - 60px);
-                    position: absolute;
-                    height: 2px;
-                    background: $gradient-background;
-                    transition: width 350ms ease-out;
-                }
+                border-radius: 100vmax;
 
                 &:hover {
-
-                    &:after {
-                        width: calc(100% - 60px);
-                        transition: width 350ms ease-out;
-                    }
+                 background: $gradient-background;
+                 color: $light;
                 }
 
                 &.active {
-                    &:after {
-                        width: calc(100% - 60px);
-                    }
+                    background: $gradient-background;
+                    color: $light;
                 }
             }
         }
