@@ -17,6 +17,13 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <meta property="og:url" content="httsp://www.milan-nikolic.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Milan Nikolic Portfolio Website" />
+    <meta property="og:description"
+        content="Frontend developer and UI designer based in Serbia, with a wide range of expertise in both the creative and development process" />
+    <meta property="og:image" content="https://milan-nikolic.com/img/og-image.jpg" />
+
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         function onSubmit(token) {
@@ -110,8 +117,8 @@
                 <div class="col-lg-6">
                     <h1><span class="gradient-text">I design & build</span>
                         digital products<span>.</span></h1>
-                    <p>I'm Milan Nikolic, a frontend developer and UI designer and frontend developer, with a wide range of
-                        expertise in both the creative and development process.</p>
+                    <p>I'm Milan Nikolic, a frontend developer and UI designer, with a wide range of expertise in both
+                        the creative and development process.</p>
                     <a href="#about" class="btn">Show me more</a>
                 </div>
                 <div class="col-lg-6 main-img">
@@ -143,11 +150,14 @@
                 </div>
                 <div class="col-md-6 ps-4 about-section">
                     <span class="tagline">About me</span>
-                    <h2><span>Working</span> since 2007</h2>
+                    <h2><span>In the business</span> since 2007</h2>
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                                 role="tab" aria-controls="nav-home" aria-selected="true">About Me</a>
+                            <a class="nav-link" id="nav-personal-info-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-personal-info" role="tab" aria-controls="nav-education"
+                                aria-selected="false">Personal Info</a>
                             <a class="nav-link" id="nav-education-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-education" role="tab" aria-controls="nav-education"
                                 aria-selected="false">Education</a>
@@ -163,6 +173,20 @@
                                 responsible for designing assets for marketing campaigns, landing pages and apps for
                                 Android and iOS devices. </p>
                             <img class="signature" src="img/signature.png" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="nav-personal-info" role="tabpanel"
+                            aria-labelledby="nav-personal-info-tab">
+                            <ul class="personal-info">
+                                <li>Name : <span>Milan Nikolić</span> </li>
+                                <li>Age : <span class="birthday"></span> </li>
+                                <li>Nationality : <span>Serbia</span> </li>
+                                <li>Freelance : <span>Available</span> </li>
+                                <li>Residence : <span>Serbia</span> </li>
+                                <li>Phone : <span>+381 63 73 95 202</span> </li>
+                                <li>Email : <span>contact@milan-nikolic.com</span> </li>
+                                <li>Languages : <span>Serbian, English</span> </li>
+                            </ul>
+
                         </div>
                         <div class="tab-pane fade" id="nav-education" role="tabpanel"
                             aria-labelledby="nav-education-tab">
@@ -215,37 +239,55 @@
                 </div>
             </div>
             <div class="row my-services">
-                <div class="col-md-4 item">
-                    <img src="img/service-1.svg" alt="What I can do for you">
-                    <h3>What I can do for you</h3>
-                    <p>Faster, better products that your users love. Here's all the services I provide:</p>
-                    <ul>
-                        <li>Graphic Design</li>
-                        <li>Web User interface Design</li>
-                        <li>Front-End Development</li>
-                    </ul>
+                <div class="col-md-6">
+                    <div class="item">
+                        <div class="icon-img">
+                            <img src="img/service-1.svg" alt="What I can do for you">
+                        </div>
+                        <div class="item-content">
+                            <h3>Web Development</h3>
+                            <p>Faster, better products that your users love. Here's all the services I provide:</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 item">
-                    <img src="img/service-2.svg" alt="Applicatitions I'm fluent in">
-                    <h3>Mastered application</h3>
-                    <p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.</p>
-                    <ul>
-                        <li>Adobe Suite</li>
-                        <li>Wordpress / Hubspot / Webflow</li>
-                        <li>HTML5 / CSS3 / SASS / JavaScipt</li>
-                    </ul>
-                </div>
-                <div class="col-md-4 item">
-                    <img src="img/service-3.svg" alt="What you can expect">
-                    <h3>What you can expect</h3>
-                    <p>I design products that are more than pretty. I make them shippable and usable.</p>
-                    <ul>
-                        <li>Clean and functional</li>
-                        <li>Device and user friendly</li>
-                        <li>Efficient and maintainable</li>
-                    </ul>
+                <div class="col-md-6">
+                    <div class="item">
+                        <div class="icon-img">
+                            <img src="img/service-2.svg" alt="Applicatitions I'm fluent in">
+                        </div>
+                        <div class="item-content">
+                            <h3>Graphic Design</h3>
+                            <p>Every designer needs the right tools to do the perfect job. Thankfully, I'm multilingual.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="row my-services">
+                <div class="col-md-6">
+                    <div class="item">
+                        <div class="icon-img">
+                            <img src="img/service-3.svg" alt="What you can expect">
+                        </div>
+                        <div class="item-content">
+                            <h3>UI & UX Design</h3>
+                            <p>I design products that are more than pretty. I make them shippable and usable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <div class="icon-img">
+                            <img src="img/service-3.svg" alt="What you can expect">
+                        </div>
+                        <div class="item-content">
+                            <h3>UI & UX Design</h3>
+                            <p>I design products that are more than pretty. I make them shippable and usable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
