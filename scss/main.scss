@@ -968,8 +968,14 @@ h1 {
     li {
         border-top: 1px solid #e5e5e5;
         padding: 15px 0;
+               &:first-child{
+            border-top: 0;
+        }
         &:nth-child(4){
             border-bottom: 1px solid #e5e5e5;
+        }
+        &:nth-child(5){
+            border-top: 0;
         }
         &:last-child{
             border-bottom: 1px solid #e5e5e5;
@@ -1111,7 +1117,7 @@ h1 {
 
     .filters {
         text-align: center;
-        margin-top: 20px;
+        margin-top: 22px;
         margin-left: 20px;
 
         ul {
@@ -1120,8 +1126,11 @@ h1 {
             li {
                 list-style: none;
                 display: inline-block;
+                margin-right: 16px;
                 padding: 10px 20px;
+                font-size: 14px;
                 cursor: pointer;
+                border: 1px solid #d1d1d1;
                 position: relative;
                 border-radius: 100vmax;
 
@@ -1314,8 +1323,6 @@ $animationSpeed: 30s;
                 left: 30px;
             }
         }
-
-
     }
 
     .contact-btn {
