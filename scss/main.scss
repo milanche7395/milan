@@ -38,8 +38,7 @@ h2 {
     text-align: center;
     font-weight: 800;
     color: $dark;
-    margin: 0 auto;
-    margin-bottom: 60px;
+    margin: 0 auto 20px;
     line-height: 120%;
 
     span {
@@ -604,6 +603,7 @@ header {
 
     p {
         font-size: 18px;
+        line-height: 150%;
     }
 
     &::after {
@@ -968,18 +968,23 @@ h1 {
     li {
         border-top: 1px solid #e5e5e5;
         padding: 15px 0;
-               &:first-child{
+
+        &:first-child {
             border-top: 0;
         }
-        &:nth-child(4){
+
+        &:nth-child(4) {
             border-bottom: 1px solid #e5e5e5;
         }
-        &:nth-child(5){
+
+        &:nth-child(5) {
             border-top: 0;
         }
-        &:last-child{
+
+        &:last-child {
             border-bottom: 1px solid #e5e5e5;
         }
+
         span {
             font-weight: 600;
         }
@@ -1024,18 +1029,24 @@ h1 {
     position: relative;
     overflow: visible;
     padding-top: 100px;
-    background: url(../../img/services-blob.svg) no-repeat;
-    background-size: 70%;
-    background-position: -430px 100px;
+
+    &:before {
+        content: '';
+        background: url(../../img/services-blob.svg) no-repeat;
+        width: 60vw;
+        height: -webkit-fill-available;
+        position: absolute;
+        top: 120px;
+        left: -31%;
+    }
+
     .container {
         padding-top: 80px;
         padding-bottom: 80px;
         position: relative;
 
-        .title {
-            .tagline {
-                text-align: center;
-            }
+        h2 {
+            text-align: left;
         }
     }
 
@@ -1046,33 +1057,60 @@ h1 {
 
     .my-services {
         margin-bottom: 40px;
-        img {
-            height: 80px;
-            width: auto;
+
+        .left {
+            padding: 80px 80px 0 0;
         }
 
         h3 {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .item {
             border-radius: 30px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-            padding: 40px;
+            padding: 20px 40px;
             background: $light;
-            box-sizing: border-box;
-            display: flex;
-
-            .icon-img{
-                margin-right: 40px;
-                // width: 210px;
-                // height: 210px;
-                background: #f1f7ff;
+            position: relative;
+            
+            
+            .icon-img {
+                margin-bottom: 20px;
+                width: 100px;
+                height: 100px;
+                background: #f3f7ff;
+                border-radius: 100vmax;
                 display: flex;
                 justify-content: center;
-                border-radius: 100vmax;
+                align-items: center;
+                position: relative;
+                z-index: 2;
+
+                &:before{
+                    content: '';
+                    width: 120px;
+                    height: 120px;
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    border-radius: 100vmax;
+                    border: 2px dashed #dae2f3;
+                    z-index: -1;
+                }
+    
+
+               
+            }
+
+            img {
+                width: 70px;
+                height: auto;
+            }
+
+            p {
+                font-size: 16px;
             }
         }
     }
@@ -1475,15 +1513,13 @@ footer {
 
     .services {
         .container {
-            .title {
-                .tagline {
-                    text-align: left;
-                }
+            .tagline {
+                text-align: left;
+            }
 
-                h2 {
-                    text-align: left;
-                    margin-bottom: 0px;
-                }
+            h2 {
+                text-align: left;
+                margin-bottom: 0px;
             }
         }
     }
