@@ -1328,6 +1328,10 @@ $animationSpeed: 30s;
             border-radius: 30px;
             padding-left: 20px !important;
 
+            &.form-invalid{
+                border: 1px solid red;
+            }
+
             &:focus~label {
                 top: -6px;
                 color: $main-color;

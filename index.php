@@ -2,22 +2,20 @@
 <html lang="en">
 
 <?php
+    $userName = $_POST['name'];
+    $userEmail = $_POST['email'];
+    $userSubject = $_POST['subject'];
+    $userMessage = $_POST['message'];
 
-    // $userName = $_POST['name'];
-    // $userEmail = $_POST['email'];
-    // $userSubject = $_POST['subject'];
-    // $userMessage = $_POST['message'];
+    $to = "mnikolic7395@gmail.com";
+    $body = "";
 
-    // $to = "mnikolic7395@gmail.com";
-    // $body = "";
+    $body .= "From: ".$userName. "\r\n";
+    $body .= "Email: ".$userEmail. "\r\n";
+    $body .= "Subject: ".$userSubject. "\r\n";
+    $body .= "Message: ".$userMessage. "\r\n";
 
-    // $body .= "From: ".$userName. "\r\n";
-    // $body .= "Email: ".$userEmail. "\r\n";
-    // $body .= "Subject: ".$userSubject. "\r\n";
-    // $body .= "Message: ".$userMessage. "\r\n";
-
-    // mail($to,$userSubject, $body);
-
+    mail($to,$userSubject, $body);
 ?>
 
 <head>
@@ -559,12 +557,9 @@
                         to contact me directly. I will come back to you within
                         a matter of hours to help you.</p>
 
-
-                    <form id="contact-form" name="contact-form" action="index.php" method="POST">
-
+                    <form id="contact-form" name="contact-form" action="" method="POST">
                         <!--Grid row-->
                         <div class="row">
-
                             <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="mb-4 form-holder">
@@ -604,7 +599,7 @@
                             <div class="col-md-12 mb-4 form-holder message">
 
                                 <textarea type="text" id="message" name="message" rows="2"
-                                    class="form-control md-textarea" required></textarea>
+                                    class="form-control md-textarea <?= $invalid_class_name ?? "" ?>" required></textarea>
                                 <label for="message">Your message</label>
 
                             </div>
