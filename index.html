@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+
+    // $userName = $_POST['name'];
+    // $userEmail = $_POST['email'];
+    // $userSubject = $_POST['subject'];
+    // $userMessage = $_POST['message'];
+
+    // $to = "mnikolic7395@gmail.com";
+    // $body = "";
+
+    // $body .= "From: ".$userName. "\r\n";
+    // $body .= "Email: ".$userEmail. "\r\n";
+    // $body .= "Subject: ".$userSubject. "\r\n";
+    // $body .= "Message: ".$userMessage. "\r\n";
+
+    // mail($to,$userSubject, $body);
+
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/main.min.css">
     <link rel="stylesheet" href="scss/magnific-popup.min.css">
+    <link rel="stylesheet" href="dist/css/aos.css">
     <title>Milan Nikolić | Web Developer and Grapchic Designer</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-touch-icon.png">
@@ -115,8 +135,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1><span class="gradient-text">I design & build</span>
-                        digital products<span>.</span></h1>
+                    <h1><span class="gradient-text">Web Developer & Designer</span>
+                        at your service<span>.</span></h1>
                     <p>I'm Milan Nikolic, a frontend developer and UI designer, with a wide range of expertise in both
                         the creative and development process.</p>
                     <a href="#about" class="btn">Show me more</a>
@@ -140,7 +160,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 pe-4 about-img">
+                <div class="col-md-6 pe-4 about-img" data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                     <div class="back-img">
                         <img class="back" src="img/about-img.webp" alt="">
                     </div>
@@ -148,7 +168,7 @@
                         <img src="img/milan-nikolic.webp" alt="Milan Nikolic">
                     </div>
                 </div>
-                <div class="col-md-6 ps-4 about-section">
+                <div class="col-md-6 ps-4 about-section" data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                     <span class="tagline">About me</span>
                     <h2><span>In the business</span> since 2007</h2>
                     <nav>
@@ -232,57 +252,59 @@
     <section id="services" class="services">
         <div class="container">
             <div class="row my-services">
-                <div class="col-md-6 left">
+                <div class="col-md-6 left" data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                     <span class="tagline">My Services</span>
                     <h2><span>Why to</span> hire me?</h2>
-                    <p>I use a wide range of techniques and tools to create high-quality websites and graphical design projects. I work, with HTML5 / CSS3 / JavaScript, jQuery, VueJS and ReactJS.</p>
-                        <p>For faster results and smaller budgets I work with WordPress, Webflow and Hubspot. My SEO skills are solid, so you can be sure that your site will rank well on search engines.</p>
+                    <p>I use a wide range of techniques and tools to create high-quality websites and graphical design
+                        projects. I work, with HTML5 / CSS3 / JavaScript, jQuery, VueJS and ReactJS.</p>
+                    <p>For faster results and smaller budgets I work with WordPress, Webflow and Hubspot. My SEO skills
+                        are solid, so you can be sure that your site will rank well on search engines.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-6 mb-4">
-                            <div class="item">
+                            <div class="item" data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-1.svg" alt="What I can do for you">
                                 </div>
                                 <div class="item-content">
                                     <h3>Web Development</h3>
-                                    <p>This is sparta</p>
+                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="item">
+                            <div class="item" data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                                 <div class="icon-img">
-                                    <img class="img-fluid" src="img/service-2.svg" alt="Applicatitions I'm fluent in">
+                                    <img class="img-fluid" src="img/service-3.svg" alt="Applicatitions I'm fluent in">
                                 </div>
                                 <div class="item-content">
                                     <h3>Graphic Design</h3>
-                                    <p>This is sparta</p>
+                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="item">
+                            <div class="item" data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                                 <div class="icon-img">
-                                    <img class="img-fluid" src="img/service-3.svg" alt="What you can expect">
+                                    <img class="img-fluid" src="img/service-2.svg" alt="What you can expect">
                                 </div>
                                 <div class="item-content">
                                     <h3>UI & UX Design</h3>
-                                    <p>This is sparta</p>
+                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="item">
+                            <div class="item" data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                                 <div class="icon-img">
-                                    <img class="img-fluid" src="img/service-3.svg" alt="What you can expect">
+                                    <img class="img-fluid" src="img/service-4.svg" alt="What you can expect">
                                 </div>
                                 <div class="item-content">
-                                    <h3>UI & UX Design</h3>
-                                    <p>This is sparta</p>
+                                    <h3>Motion Graphics</h3>
+                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +316,7 @@
 
     <section id="work" class="work">
         <div class="container">
-            <div class="d-flex flex-row">
+            <div class="d-flex flex-row"  data-aos="fade" data-aos-delay="200" data-aos-duration="500">
                 <div class="p-2">
                     <span class="tagline">Portfolio</span>
                     <h2><span>Latest</span> work.</h2>
@@ -315,44 +337,32 @@
 
 
 
-            <div class="filters-content">
+            <div class="filters-content"  data-aos="fade" data-aos-delay="300" data-aos-duration="500">
                 <div class="row grid gallery">
                     <div class="col-md-3 all GraphicDesign thumb">
                         <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            <a href="img/portfolio/idvorsky-business-card.webp">
+                                <figure><img class="img-thumbnail" src="img/portfolio/idvorsky-business-card.webp"
                                         alt="Random Image"></figure>
                                 <div class="p-inner">
-                                    <div class="info">Wellness</div>
+                                    <div class="info">
+                                        <h4>Idvorsky</h4>
+                                        <span>Business Card Design</span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 all UiUX thumb">
+                    <div class="col-md-3 all GraphicDesign thumb">
                         <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                            <a href="img/portfolio/idvorsky-logo.webp">
+                                <figure><img class="img-thumbnail" src="img/portfolio/idvorsky-logo.webp"
                                         alt="Random Image"></figure>
                                 <div class="p-inner">
-                                    <div class="info">Spa</div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3 all UiUX thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">Massages</div>
+                                    <div class="info">
+                                        <h4>Idvorsky</h4>
+                                        <span>Logo Design</span>
+                                    </div>
                                 </div>
                             </a>
 
@@ -360,13 +370,29 @@
                     </div>
                     <div class="col-md-3 all FrontEnd thumb">
                         <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                                        alt="Random Image"></figure>
+                            <a href="img/portfolio/ppf.webp">
+                                <figure><img class="img-thumbnail" src="img/portfolio/ppf.webp" alt="Random Image">
+                                </figure>
                                 <div class="p-inner">
-                                    <div class="info">BodyCurves</div>
+                                    <div class="info">
+                                        <h4>EU PPF</h4>
+                                        <span>Wordpress Development</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 all FrontEnd thumb">
+                        <div class="item">
+                            <a href="img/portfolio/dr-zutic.webp">
+                                <figure><img class="img-thumbnail" src="img/portfolio/dr-zutic.webp" alt="Random Image">
+                                </figure>
+                                <div class="p-inner">
+                                    <div class="info">
+                                        <h4>Dr.Zutic</h4>
+                                        <span>Website Development</span>
+                                    </div>
                                 </div>
                             </a>
 
@@ -376,12 +402,12 @@
                     <div class="col-md-3 all UiUx thumb">
                         <div class="item">
                             <a
-                                href="https://images.unsplash.com/flagged/photo-1560944527-a4a429848866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80">
+                                href="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
                                 <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/flagged/photo-1560944527-a4a429848866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                        src="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
                                         alt="Random Image"></figure>
                                 <div class="p-inner">
-                                    <div class="info">Face Lifting</div>
+                                    <div class="info">Massages</div>
                                 </div>
                             </a>
 
@@ -537,7 +563,7 @@
                         a matter of hours to help you.</p>
 
 
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <form id="contact-form" name="contact-form" action="index.php" method="POST">
 
                         <!--Grid row-->
                         <div class="row">
@@ -664,8 +690,9 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.nav.js"></script>
+    <script src="js/jquery.nav.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
 
 </body>
 
