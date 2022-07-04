@@ -15,7 +15,7 @@
     $body .= "Subject: ".$userSubject. "\r\n";
     $body .= "Message: ".$userMessage. "\r\n";
 
-    mail($to,$userSubject, $body);
+    //mail($to,$userSubject, $body);
 ?>
 
 <head>
