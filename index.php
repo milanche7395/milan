@@ -1,23 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php
-    $userName = $_POST['name'];
-    $userEmail = $_POST['email'];
-    $userSubject = $_POST['subject'];
-    $userMessage = $_POST['message'];
 
-    $to = "mnikolic7395@gmail.com";
-    $body = "";
+if(isset($_POST['button']))
+{
+  $from_email     = 'mnikolic7395@gmail.com'; //from mail, sender email address
+  $recipient_email = 'milanche7395@gmail.com'; //recipient email address
+  
+  //Load POST data from HTML form
+  $sender_name = $_POST["name"]; //sender name
+  $reply_to_email = $_POST["email"]; //sender email, it will be used in "reply-to" header
+  $subject   = $_POST["subject"]; //subject for the email
+  $message   = $_POST["message"]; //body of the email
 
-    $body .= "From: ".$userName. "\r\n";
-    $body .= "Email: ".$userEmail. "\r\n";
-    $body .= "Subject: ".$userSubject. "\r\n";
-    $body .= "Message: ".$userMessage. "\r\n";
+  /*Always remember to validate the form fields like this
+  if(strlen($sender_name)<1)
+  {
+    die('Name is too short or empty!');
+  }
+  */
 
-    //mail($to,$userSubject, $body);
+  $encoded_content = chunk_split(base64_encode($content));
+  $boundary = md5("random"); // define boundary with a md5 hashed value
+
+  //header
+  $headers = "MIME-Version: 1.0\r\n"; // Defining the MIME version
+  $headers .= "From:".$from_email."\r\n"; // Sender Email
+  $headers .= "Reply-To: ".$reply_to_email."\r\n"; // Email address to reach back
+  $headers .= "Content-Type: multipart/mixed;"; // Defining Content-Type
+  $headers .= "boundary = $boundary\r\n"; //Defining the Boundary
+    
+  //plain text
+  $body = "--$boundary\r\n";
+  $body .= "Content-Type: text/plain; charset=ISO-8859-1\r\n";
+  $body .= "Content-Transfer-Encoding: base64\r\n\r\n";
+  $body .= chunk_split(base64_encode($message));
+
+  
+  $sentMailResult = mail($recipient_email, $subject, $body, $headers);
+
+  if($sentMailResult ){
+    
+  }
+  else{
+    die("Sorry but the email could not be sent.
+          Please go back and try again!");
+  }
+}
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -517,19 +548,6 @@
     </section>
 
     <section class="contact mb-5" id="contact" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
-        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg"
-            class="transition duration-300 ease-in-out delay-150">
-            <defs>
-                <linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%">
-                    <stop offset="5%" stop-color="#f2f2f2ff"></stop>
-                    <stop offset="95%" stop-color="#ffffffff"></stop>
-                </linearGradient>
-            </defs>
-            <path
-                d="M 0,400 C 0,400 0,200 0,200 C 206.13333333333333,183.33333333333331 412.26666666666665,166.66666666666666 568,168 C 723.7333333333333,169.33333333333334 829.0666666666668,188.66666666666669 966,197 C 1102.9333333333332,205.33333333333331 1271.4666666666667,202.66666666666666 1440,200 C 1440,200 1440,400 1440,400 Z"
-                stroke="none" stroke-width="0" fill="url(#gradient)"
-                class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
-        </svg>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -550,14 +568,24 @@
                     </ul>
                 </div>
                 <div class="col-md-8">
+                   
+                        <?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST')
+        {
+            echo "<span class=\"tagline\">Message sent</span>";
+            echo "<h2>We'll be in touch.</h2>";
+        }
+            else
+        {
+    ?>
                     <span class="tagline">Drop a line</span>
                     <h2>Send me a message</h2>
+
                     <!--Section description-->
                     <p class="w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate
                         to contact me directly. I will come back to you within
                         a matter of hours to help you.</p>
-
-                    <form id="contact-form" name="contact-form" action="" method="POST">
+                    <form id="contact-form" name="contact-form" action="index.php#contact" method="POST">
                         <!--Grid row-->
                         <div class="row">
                             <!--Grid column-->
@@ -606,15 +634,23 @@
                         </div>
                         <!--Grid row-->
 
+                        <div>
+                            <!-- <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> -->
+                            <!-- <a class="btn contact-btn" onclick="validateForm();" class="g-recaptcha"
+                                data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit'
+                                data-action='submit'>Send</a> -->
+
+                                <input class="btn btn-primary" type="submit" name="button" value="Send"  onclick="validateForm();" class="g-recaptcha"
+                                data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit'
+                                data-action='submit'/>
+                            <div class="status"></div>
+                        </div>
+                  
                     </form>
 
-                    <div>
-                        <!-- <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> -->
-                        <a class="btn contact-btn" onclick="validateForm();" class="g-recaptcha"
-                            data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit'
-                            data-action='submit'>Send</a>
-                        <div class="status"></div>
-                    </div>
+                    <?php
+}
+?>
 
                 </div>
                 <!--Grid column-->
