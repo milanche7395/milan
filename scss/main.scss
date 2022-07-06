@@ -325,13 +325,13 @@ body {
 
 .progress-holder {
     position: fixed;
-    top: 80px;
+    top: 0;
     width: 100%;
     z-index: 1000;
 
     .progress-container {
         background-color: transparent;
-        height: 5px;
+        height: 3px;
         width: 100%;
     }
 
