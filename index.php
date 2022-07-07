@@ -73,6 +73,8 @@ if(isset($_POST['button']))
         content="Frontend developer and UI designer based in Serbia, with a wide range of expertise in both the creative and development process" />
     <meta property="og:image" content="https://milan-nikolic.com/img/og-image.jpg" />
 
+    <script src="js/fontawesome.js"></script>
+
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
         function onSubmit(token) {
@@ -164,11 +166,12 @@ if(isset($_POST['button']))
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h1><span class="gradient-text">Web Developer & Designer</span>
-                        at your service<span>.</span></h1>
+                    <span class="tagline-headline">Howdy!</span>
+                    <h1><span class="gradient-text">I am Milan Nikolić</span></h1>
                     <p>I'm Milan Nikolic, a frontend developer and UI designer, with a wide range of expertise in both
                         the creative and development process.</p>
                     <a href="#about" class="btn">Show me more</a>
+                    <h3></h3>
                 </div>
                 <div class="col-lg-6 main-img">
                     <img src="img/circle.svg" alt="" class="circle">
@@ -199,7 +202,7 @@ if(isset($_POST['button']))
                 </div>
                 <div class="col-md-6 ps-4 about-section">
                     <span class="tagline">About me</span>
-                    <h2><span>In the business</span> since 2007</h2>
+                    <h2>Know me <span>more</span></h2>
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -283,7 +286,7 @@ if(isset($_POST['button']))
             <div class="row my-services">
                 <div class="col-md-6 left">
                     <span class="tagline">My Services</span>
-                    <h2><span>Why to</span> hire me?</h2>
+                    <h2>Why to <span>hire me?</span></h2>
                     <p>I use a wide range of techniques and tools to create high-quality websites and graphical design
                         projects. I work, with HTML5 / CSS3 / JavaScript, jQuery, VueJS and ReactJS.</p>
                     <p>For faster results and smaller budgets I work with WordPress, Webflow and Hubspot. My SEO skills
@@ -291,7 +294,7 @@ if(isset($_POST['button']))
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6 mb-4">
+                        <div class="col-md-6 mb-4 hover">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-1.svg" alt="What I can do for you">
@@ -302,7 +305,7 @@ if(isset($_POST['button']))
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 hover">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-3.svg" alt="Applicatitions I'm fluent in">
@@ -315,7 +318,7 @@ if(isset($_POST['button']))
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 hover">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-2.svg" alt="What you can expect">
@@ -326,7 +329,7 @@ if(isset($_POST['button']))
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 hover">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-4.svg" alt="What you can expect">
@@ -348,7 +351,7 @@ if(isset($_POST['button']))
             <div class="d-flex flex-row">
                 <div class="p-2">
                     <span class="tagline">Portfolio</span>
-                    <h2><span>Latest</span> work.</h2>
+                    <h2>Latest <span>work</span></h2>
                 </div>
                 <div class="p-2">
                     <!-- Filter Gallery -->
@@ -547,23 +550,23 @@ if(isset($_POST['button']))
         </div>
     </section>
 
-    <section class="contact mb-5" id="contact" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
+    <section class="contact" id="contact" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <span class="tagline">Get in Touch</span>
-                    <h2>Contact me</h2>
+                    <h2>Contact <span>me</span></h2>
+                    <p>If you have any questions, fill up the form or you can contact me directly.</p>
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>Serbia, Belgrade</p>
+                        <li><i class="fa-solid fa-location-dot"></i> <p>Serbia, Belgrade</p>
                         </li>
 
-                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                            <p><a href="tel:+381637395202">+381 63 73 95 202</a></p>
+                        <li><i class="fa-solid fa-phone"></i>
+                            <p> <a href="tel:+381637395202">+381 63 73 95 202</a></p>
                         </li>
 
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p><a href="mailto:contact@milan-nikolic.com">contact@milan-nikolic.com</a></p>
+                        <li><i class="fa-solid fa-envelope"></i></i>
+                            <p> <a href="mailto:contact@milan-nikolic.com">contact@milan-nikolic.com</a></p>
                         </li>
                     </ul>
                 </div>
@@ -573,18 +576,12 @@ if(isset($_POST['button']))
     if($_SERVER['REQUEST_METHOD'] == 'POST')
         {
             echo "<span class=\"tagline\">Message sent</span>";
-            echo "<h2>We'll be in touch.</h2>";
+            echo "<h2>We'll be <span>in touch.</span></h2>";
         }
             else
         {
     ?>
-                    <span class="tagline">Drop a line</span>
-                    <h2>Send me a message</h2>
-
                     <!--Section description-->
-                    <p class="w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate
-                        to contact me directly. I will come back to you within
-                        a matter of hours to help you.</p>
                     <form id="contact-form" name="contact-form" action="index.php#contact" method="POST">
                         <!--Grid row-->
                         <div class="row">
@@ -719,6 +716,7 @@ if(isset($_POST['button']))
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.hover3d.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/aos.js"></script>
 

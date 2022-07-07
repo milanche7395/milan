@@ -94,7 +94,6 @@ $(document).ready(function () {
 
 });
 
-
 function clickNav() {
     if ($(window).width() < 1200) {
         $("nav ul li a").click(function () {
@@ -138,6 +137,17 @@ $('body').on('click', '.menu', function () {
 //Social Link
 $('.button-social').click(function () {
     $(".social-holder").toggleClass('active');
+});
+
+/* 3D Hover */
+$(".hover").hover3d({
+	selector: ".item",
+    sensitivity: 10,
+});
+
+$(".thumb").hover3d({
+	selector: ".item",
+    sensitivity: 10,
 });
 
 /* Disabled Right Click */
