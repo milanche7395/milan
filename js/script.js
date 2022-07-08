@@ -139,17 +139,6 @@ $('.button-social').click(function () {
     $(".social-holder").toggleClass('active');
 });
 
-/* 3D Hover */
-$(".hover").hover3d({
-	selector: ".item",
-    sensitivity: 10,
-});
-
-$(".thumb").hover3d({
-	selector: ".item",
-    sensitivity: 10,
-});
-
 /* Disabled Right Click */
 
 /*$("body").contextmenu(function () {

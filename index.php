@@ -294,7 +294,7 @@ if(isset($_POST['button']))
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6 mb-4 hover">
+                        <div class="col-md-6 mb-4">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-1.svg" alt="What I can do for you">
@@ -305,7 +305,7 @@ if(isset($_POST['button']))
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 hover">
+                        <div class="col-md-6">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-3.svg" alt="Applicatitions I'm fluent in">
@@ -318,7 +318,7 @@ if(isset($_POST['button']))
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 hover">
+                        <div class="col-md-6">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-2.svg" alt="What you can expect">
@@ -329,7 +329,7 @@ if(isset($_POST['button']))
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 hover">
+                        <div class="col-md-6">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-4.svg" alt="What you can expect">
