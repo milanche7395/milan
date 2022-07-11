@@ -166,10 +166,9 @@ if(isset($_POST['button']))
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <span class="tagline-headline">Howdy!</span>
-                    <h1><span class="gradient-text">I am Milan Nikolić</span></h1>
-                    <p>I'm Milan Nikolic, a frontend developer and UI designer, with a wide range of expertise in both
-                        the creative and development process.</p>
+                    <span class="tagline-headline">Hello, I am <strong>Milan Nikolić</strong></span>
+                    <h1><span class="gradient-text">Web Developer & UI Designer</span></h1>
+                    <p>I am a frontend developer and UI designer, with over 15 years experience. I mainly work on frontend using HTML, CSS/SASS and JS Libraries. I use Adobe Suite to design mocks and illustrations. <br>Currently working at BridTV Company.</p>
                     <a href="#about" class="btn">Show me more</a>
                     <h3></h3>
                 </div>
@@ -202,7 +201,7 @@ if(isset($_POST['button']))
                 </div>
                 <div class="col-md-6 ps-4 about-section">
                     <span class="tagline">About me</span>
-                    <h2>Know me <span>more</span></h2>
+                    <h2>From zero to <span>hero</span></h2>
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -286,33 +285,31 @@ if(isset($_POST['button']))
             <div class="row my-services">
                 <div class="col-md-6 left">
                     <span class="tagline">My Services</span>
-                    <h2>Why to <span>hire me?</span></h2>
+                    <h2>Why do <span>I need you?</span></h2>
                     <p>I use a wide range of techniques and tools to create high-quality websites and graphical design
                         projects. I work, with HTML5 / CSS3 / JavaScript, jQuery, VueJS and ReactJS.</p>
                     <p>For faster results and smaller budgets I work with WordPress, Webflow and Hubspot. My SEO skills
                         are solid, so you can be sure that your site will rank well on search engines.</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
                             <div class="item">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-1.svg" alt="What I can do for you">
                                 </div>
                                 <div class="item-content">
                                     <h3>Web Development</h3>
-                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="item">
+                            <div class="item second-service">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-3.svg" alt="Applicatitions I'm fluent in">
                                 </div>
                                 <div class="item-content">
                                     <h3>Graphic Design</h3>
-                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
@@ -325,18 +322,16 @@ if(isset($_POST['button']))
                                 </div>
                                 <div class="item-content">
                                     <h3>UI & UX Design</h3>
-                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="item">
+                            <div class="item second-service">
                                 <div class="icon-img">
                                     <img class="img-fluid" src="img/service-4.svg" alt="What you can expect">
                                 </div>
                                 <div class="item-content">
                                     <h3>Motion Graphics</h3>
-                                    <p>This is sparta koja ide u dva reda</p>
                                 </div>
                             </div>
                         </div>
