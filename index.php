@@ -550,7 +550,7 @@ if(isset($_POST['button']))
     <section class="contact" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-4" data-aos="fade" data-aos-delay="200" data-aos-duration="800"">
+                <div class="col-md-4">
                     <span class="tagline">Get in Touch</span>
                     <h2>Contact <span>me</span></h2>
                     <p>If you have any questions, fill up the form or you can contact me directly.</p>
@@ -567,7 +567,7 @@ if(isset($_POST['button']))
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-8" data-aos="fade" data-aos-delay="200" data-aos-duration="800"">
+                <div class="col-md-8">
                    
                         <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST')

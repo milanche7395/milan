@@ -1327,9 +1327,21 @@ $animationSpeed: 30s;
 .contact {
     position: relative;
     padding: 80px 0;
+    margin-top: 80px;
     overflow: visible;
-    background: #f5f8ff;
-    border-top: 1px solid #eaeaea;
+    background: #F3F7FF;
+    
+    &:before{
+        content: "";
+        width: 100vw;
+        height: 140px;
+        background: url(../../img/wave.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -140px;
+    }
+
+    
 
     h2 {
         text-align: left;
@@ -1466,8 +1478,8 @@ footer {
     text-align: center;
     font-size: 14px;
     padding: 20px 0;
-    border-top: 1px solid #eaeaea;
-    color: #999;
+    background: #ecf1fb;
+    color: #879bc1;
 }
 
 @media only screen and (max-width: 1400px) {
