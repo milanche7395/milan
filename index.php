@@ -191,7 +191,7 @@ if(isset($_POST['button']))
     <section id="about" class="about" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 pe-4 about-img">
+                <div class="col-lg-6 pe-4 about-img">
                     <div class="back-img">
                         <img class="back" src="img/about-img.webp" alt="">
                     </div>
@@ -199,7 +199,7 @@ if(isset($_POST['button']))
                         <img src="img/milan-nikolic.webp" alt="Milan Nikolic">
                     </div>
                 </div>
-                <div class="col-md-6 ps-4 about-section">
+                <div class="col-lg-6 ps-4 about-section">
                     <span class="tagline">About me</span>
                     <h2>From zero to <span>hero</span></h2>
                     <nav>
@@ -283,15 +283,15 @@ if(isset($_POST['button']))
     <section id="services" class="services" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row my-services">
-                <div class="col-md-6 left">
+                <div class="col-lg-6 left">
                     <span class="tagline">My Services</span>
-                    <h2>Why do <span>I need you?</span></h2>
+                    <h2>Why do <span>you need me?</span></h2>
                     <p>I use a wide range of techniques and tools to create high-quality websites and graphical design
                         projects. I work, with HTML5 / CSS3 / JavaScript, jQuery, VueJS and ReactJS.</p>
                     <p>For faster results and smaller budgets I work with WordPress, Webflow and Hubspot. My SEO skills
                         are solid, so you can be sure that your site will rank well on search engines.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="row mb-4">
                         <div class="col-md-6">
                             <div class="item">
@@ -343,12 +343,12 @@ if(isset($_POST['button']))
 
     <section id="work" class="work" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
-            <div class="d-flex flex-row">
-                <div class="p-2">
+            <div class="row">
+                <div class="col-xl-3">
                     <span class="tagline">Portfolio</span>
                     <h2>Latest <span>work</span></h2>
                 </div>
-                <div class="p-2">
+                <div class="col-xl-9">
                     <!-- Filter Gallery -->
                     <div class="filters">
                         <ul>
@@ -545,10 +545,10 @@ if(isset($_POST['button']))
         </div>
     </section>
 
-    <section class="contact" id="contact" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade" data-aos-delay="200" data-aos-duration="800"">
                     <span class="tagline">Get in Touch</span>
                     <h2>Contact <span>me</span></h2>
                     <p>If you have any questions, fill up the form or you can contact me directly.</p>
@@ -565,7 +565,7 @@ if(isset($_POST['button']))
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade" data-aos-delay="200" data-aos-duration="800"">
                    
                         <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST')
