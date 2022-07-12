@@ -363,7 +363,7 @@ if(isset($_POST['button']))
 
             <div class="filters-content">
                 <div class="row grid gallery">
-                    <div class="col-md-3 all GraphicDesign thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
                         <div class="item">
                             <a href="img/portfolio/idvorsky-business-card.webp">
                                 <figure><img class="img-thumbnail" src="img/portfolio/idvorsky-business-card.webp"
@@ -377,7 +377,7 @@ if(isset($_POST['button']))
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 all GraphicDesign thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
                         <div class="item">
                             <a href="img/portfolio/idvorsky-logo.webp">
                                 <figure><img class="img-thumbnail" src="img/portfolio/idvorsky-logo.webp"
@@ -392,7 +392,7 @@ if(isset($_POST['button']))
 
                         </div>
                     </div>
-                    <div class="col-md-3 all FrontEnd thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
                         <div class="item">
                             <a href="img/portfolio/ppf.webp">
                                 <figure><img class="img-thumbnail" src="img/portfolio/ppf.webp" alt="Random Image">
@@ -407,7 +407,7 @@ if(isset($_POST['button']))
 
                         </div>
                     </div>
-                    <div class="col-md-3 all FrontEnd thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
                         <div class="item">
                             <a href="img/portfolio/dr-zutic.webp">
                                 <figure><img class="img-thumbnail" src="img/portfolio/dr-zutic.webp" alt="Random Image">
@@ -423,7 +423,7 @@ if(isset($_POST['button']))
                         </div>
                     </div>
 
-                    <div class="col-md-3 all UiUx thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all UiUx thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
@@ -438,7 +438,7 @@ if(isset($_POST['button']))
                         </div>
                     </div>
 
-                    <div class="col-md-3 all GraphicDesign thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
@@ -455,7 +455,7 @@ if(isset($_POST['button']))
                     </div>
 
 
-                    <div class="col-md-3 all UiUx thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all UiUx thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
@@ -468,7 +468,7 @@ if(isset($_POST['button']))
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 all FrontEnd thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
@@ -481,7 +481,7 @@ if(isset($_POST['button']))
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-3 all FrontEnd thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
@@ -496,7 +496,7 @@ if(isset($_POST['button']))
 
                         </div>
                     </div>
-                    <div class="col-md-3 all GraphicDesign thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
@@ -510,7 +510,7 @@ if(isset($_POST['button']))
                         </div>
                     </div>
 
-                    <div class="col-md-3 all GraphicDesign thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/flagged/photo-1560944527-a4a429848866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80">
@@ -524,7 +524,7 @@ if(isset($_POST['button']))
                         </div>
                     </div>
 
-                    <div class="col-md-3 all GraphicDesign thumb">
+                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
                         <div class="item">
                             <a
                                 href="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">

@@ -1224,7 +1224,7 @@ header {
             text-align: center;
             cursor: pointer;
             margin-top: 30px;
-            border-radius: 30px;
+            border-radius: 20px;
             overflow: hidden;
             position: relative;
 
@@ -1243,7 +1243,32 @@ header {
                 justify-content: center;
                 align-items: center;
 
+                &:before{
+                    content: '';
+                    position: absolute;
+                    border: 2px solid rgba(255,255,255, 0.5);
+                    width: 70%;
+                    height: 70%;
+                    top: 15%;
+                    left: 15%;
+                    border-radius: 15px;
+                    opacity: 0;
+                    transition: $main-transition;
+                }
+
+                &:hover:before{
+                    opacity: 1;
+                    width: 90%;
+                    height: 90%;
+                    top: 5%;
+                    left: 5%;
+                }
+
                 .info {
+                    opacity: 0;
+                    transform: translateY(-30px);
+                    transition: $main-transition;
+
                     h4 {
                         font-size: 20px;
                         margin-bottom: 10px;
@@ -1262,6 +1287,11 @@ header {
 
             &:hover .p-inner {
                 opacity: 1;
+            }
+
+            &:hover .info{
+                opacity: 1;
+                transform: translateY(0px);
             }
 
             .img-thumbnail {
