@@ -279,7 +279,9 @@ if(isset($_POST['button']))
                 </div>
             </div>
     </section>
-
+    <!-- https://splidejs.com/ -->
+<!-- https://codepen.io/brandonleetran/pen/bGEKrEE -->
+<!-- https://codepen.io/search/pens?q=splidejs -->
     <section id="services" class="services" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row my-services">
