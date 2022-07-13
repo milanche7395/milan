@@ -346,7 +346,7 @@ if(isset($_POST['button']))
 
     <section id="work" class="work" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-xl-3">
                     <span class="tagline">Portfolio</span>
                     <h2>Latest <span>work</span></h2>
@@ -371,13 +371,31 @@ if(isset($_POST['button']))
                             </a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://brandontran.com/images/cardboard-castle-5.jpg" data-effect="mfp-zoom-out"><img src="https://brandontran.com/images/cardboard-castle-5.jpg"></a>
+                            <a href="https://brandontran.com/images/cardboard-castle-5.jpg" data-effect="mfp-zoom-out">
+                                <img src="https://brandontran.com/images/cardboard-castle-5.jpg">
+                                <div class="overlay">
+                                    <h3>Test</h3>
+                                    <p>Tralala</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://brandontran.com/images/cardboard-castle-4.jpg" data-effect="mfp-zoom-out"><img src="https://brandontran.com/images/cardboard-castle-4.jpg"></a>
+                            <a href="https://brandontran.com/images/cardboard-castle-4.jpg" data-effect="mfp-zoom-out">
+                                <img src="https://brandontran.com/images/cardboard-castle-4.jpg">
+                                <div class="overlay">
+                                    <h3>Test</h3>
+                                    <p>Tralala</p>
+                                </div>
+                            </a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://brandontran.com/images/cardboard-castle-3.jpg" data-effect="mfp-zoom-out"><img src="https://brandontran.com/images/cardboard-castle-3.jpg"></a>
+                            <a href="https://brandontran.com/images/cardboard-castle-3.jpg" data-effect="mfp-zoom-out">
+                                <img src="https://brandontran.com/images/cardboard-castle-3.jpg">
+                                <div class="overlay">
+                                    <h3>Test</h3>
+                                    <p>Tralala</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>

@@ -1153,13 +1153,18 @@ header {
                 display: block;
                 width: 100%;
                 border-radius: 30px;
+                
+            }
+
+            a{
                 transition: transform 400ms;
                 transform: scale(0.9);
+                border-radius: 30px;
                 transform-origin: center center;
             }
 
             &.is-active {
-                img {
+                a {
                     transform: scale(1);
                 }
             }
@@ -1194,13 +1199,18 @@ header {
                 position: relative;
                 overflow: hidden;
                 display: block;
+                transition: $main-transition;
+
+                img{
+                    transition: $main-transition;
+                }
 
                 .overlay {
                     opacity: 0;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    transform: translateY(-20px);
+                    background: rgba(0,0,0,0.5);
                     z-index: 99;
                     width: 100%;
                     height: 100%;
@@ -1210,7 +1220,28 @@ header {
                     justify-content: center;
                     flex-direction: column;
                     transition: $main-transition;
-
+                    
+                    &:before{
+                        content: '';
+                        width: 96%;
+                        height: 92%;
+                        top:4%;
+                        left:2%;
+                        position: absolute;
+                        border-radius: 20px;
+                        border: 1px solid rgba(255, 255, 255, 0.4);
+                        transition: $main-transition;
+                        opacity: 0;
+                    }
+                    
+                    &:hover:before {
+                        width: 92%;
+                        height: 90%;
+                        top:5%;
+                        left:4%;
+                        opacity: 1;
+                        transition: $main-transition;
+                    }
                 }
 
                 &:hover .overlay {
@@ -1220,7 +1251,28 @@ header {
 
                 h3,
                 p {
-                    color: $dark;
+                    color: $light;
+                    transform: translateY(-20px);
+                    transition: $main-transition;
+                }
+                h3{
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-weight: 400;
+                }
+
+                &:hover h3,
+                &:hover p{
+                    transform: translateY(0px);
+                }
+
+                &:hover img{
+                    transform: scale(1.1);
+                    transition: $main-transition;
                 }
             }
         }
