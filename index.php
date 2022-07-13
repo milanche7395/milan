@@ -54,6 +54,7 @@ if(isset($_POST['button']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/css/main.min.css">
+    <link rel="stylesheet" href="dist/css/splide.min.css">
     <link rel="stylesheet" href="scss/magnific-popup.min.css">
     <link rel="stylesheet" href="dist/css/aos.css">
     <title>Milan Nikolić | Web Developer and Grapchic Designer</title>
@@ -351,200 +352,39 @@ if(isset($_POST['button']))
                     <h2>Latest <span>work</span></h2>
                 </div>
                 <div class="col-xl-9">
-                    <!-- Filter Gallery -->
-                    <div class="filters">
-                        <ul>
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".GraphicDesign">Graphic Design</li>
-                            <li data-filter=".FrontEnd">Web Development</li>
-                            <li data-filter=".UiUx">Ui & Ux Design</li>
-                        </ul>
-                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos. Voluptate a excepturi officia dicta ducimus! Nemo blanditiis laboriosam aut asperiores officiis. Libero distinctio, possimus nobis asperiores adipisci voluptate cupiditate!</p>
                 </div>
             </div>
-
-            <div class="filters-content">
-                <div class="row grid gallery">
-                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
-                        <div class="item">
-                            <a href="img/portfolio/idvorsky-business-card.webp">
-                                <figure><img class="img-thumbnail" src="img/portfolio/idvorsky-business-card.webp"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">
-                                        <h4>Idvorsky</h4>
-                                        <span>Business Card Design</span>
-                                    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="splide" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href="https://brandontran.com/images/cardboard-castle-10.jpg" data-effect="mfp-zoom-out">
+                                <img src="https://brandontran.com/images/cardboard-castle-10.jpg">
+                                <div class="overlay">
+                                    <h3>Test</h3>
+                                    <p>Tralala</p>
                                 </div>
                             </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
-                        <div class="item">
-                            <a href="img/portfolio/idvorsky-logo.webp">
-                                <figure><img class="img-thumbnail" src="img/portfolio/idvorsky-logo.webp"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">
-                                        <h4>Idvorsky</h4>
-                                        <span>Logo Design</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
-                        <div class="item">
-                            <a href="img/portfolio/ppf.webp">
-                                <figure><img class="img-thumbnail" src="img/portfolio/ppf.webp" alt="Random Image">
-                                </figure>
-                                <div class="p-inner">
-                                    <div class="info">
-                                        <h4>EU PPF</h4>
-                                        <span>Wordpress Development</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
-                        <div class="item">
-                            <a href="img/portfolio/dr-zutic.webp">
-                                <figure><img class="img-thumbnail" src="img/portfolio/dr-zutic.webp" alt="Random Image">
-                                </figure>
-                                <div class="p-inner">
-                                    <div class="info">
-                                        <h4>Dr.Zutic</h4>
-                                        <span>Website Development</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-3 all UiUx thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">Massages</div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">RelaxBaths</div>
-                                </div>
-                            </a>
-
-
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-6 col-md-4 col-lg-3 all UiUx thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">Wellness</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">Spa</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 all FrontEnd thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">Massages</div>
-                                </div>
-                            </a>
-
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">BodyCurves</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/flagged/photo-1560944527-a4a429848866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/flagged/photo-1560944527-a4a429848866?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">Face Lifting</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-3 all GraphicDesign thumb">
-                        <div class="item">
-                            <a
-                                href="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80">
-                                <figure><img class="img-thumbnail"
-                                        src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
-                                        alt="Random Image"></figure>
-                                <div class="p-inner">
-                                    <div class="info">RelaxBaths</div>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-
+                        </li>
+                        <li class="splide__slide">
+                            <a href="https://brandontran.com/images/cardboard-castle-5.jpg" data-effect="mfp-zoom-out"><img src="https://brandontran.com/images/cardboard-castle-5.jpg"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="https://brandontran.com/images/cardboard-castle-4.jpg" data-effect="mfp-zoom-out"><img src="https://brandontran.com/images/cardboard-castle-4.jpg"></a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="https://brandontran.com/images/cardboard-castle-3.jpg" data-effect="mfp-zoom-out"><img src="https://brandontran.com/images/cardboard-castle-3.jpg"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </section>
 
     <section class="contact" id="contact">
@@ -629,11 +469,6 @@ if(isset($_POST['button']))
                         <!--Grid row-->
 
                         <div>
-                            <!-- <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a> -->
-                            <!-- <a class="btn contact-btn" onclick="validateForm();" class="g-recaptcha"
-                                data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit'
-                                data-action='submit'>Send</a> -->
-
                                 <input class="btn btn-primary" type="submit" name="button" value="Send"  onclick="validateForm();" class="g-recaptcha"
                                 data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit'
                                 data-action='submit'/>
@@ -710,10 +545,9 @@ if(isset($_POST['button']))
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.hover3d.min.js"></script>
+    <script src="js/splide.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/aos.js"></script>
 

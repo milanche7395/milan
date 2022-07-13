@@ -21,23 +21,20 @@ $(document).ready(function () {
         $(".preloader").fadeOut("slow");
     }, 2000);*/
 
-    // Portfolio
-    $('.filters ul li').click(function () {
-        $('.filters ul li').removeClass('active');
-        $(this).addClass('active');
-
-        var data = $(this).attr('data-filter');
-        $grid.isotope({
-            filter: data
-        })
-    });
 
     //   popup 
-    $(".gallery").magnificPopup({
+    $(".splide").magnificPopup({
         delegate: "a",
         type: "image",
         tLoading: "Loading image #%curr%...",
-        mainClass: "mfp-img-mobile",
+        mainClass: 'mfp-with-fade',
+        callbacks: {
+            beforeOpen: function() {
+              // just a hack that adds mfp-anim class to markup 
+               this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+               this.st.mainClass = this.st.el.attr('data-effect');
+            }
+          },
         gallery: {
             enabled: true,
             navigateByImgClick: true,
@@ -84,14 +81,6 @@ $(document).ready(function () {
     //display the calculated age
     $('.birthday').text(age);
 
-    var $grid = $(".grid").isotope({
-        itemSelector: ".all",
-        percentPosition: true,
-        masonry: {
-            columnWidth: ".all"
-        }
-    })
-
 });
 
 function clickNav() {
@@ -105,6 +94,27 @@ function clickNav() {
         $('.menu--close5').removeClass('open');
     }
 }
+// Gallery
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide('#splide', {
+      type: 'loop',
+      perPage: 3,
+      focus: 'center',
+      autoplay: true,
+      interval: 8000,
+      flickMaxPages: 3,
+      updateOnMove: true,
+      pagination: false,
+      padding: '10%',
+      throttle: 300,
+      breakpoints: {
+        1440: {
+          perPage: 1,
+          padding: '30%'
+        }
+      }
+    }).mount();
+  });
 
 // Navigation
 $(document).on('click', 'a[href^="#"]', function (event) {
