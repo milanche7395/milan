@@ -280,9 +280,7 @@ if(isset($_POST['button']))
                 </div>
             </div>
     </section>
-    <!-- https://splidejs.com/ -->
-<!-- https://codepen.io/brandonleetran/pen/bGEKrEE -->
-<!-- https://codepen.io/search/pens?q=splidejs -->
+
     <section id="services" class="services" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row my-services">
@@ -293,6 +291,7 @@ if(isset($_POST['button']))
                         projects. I work, with HTML5 / CSS3 / JavaScript, jQuery, VueJS and ReactJS.</p>
                     <p>For faster results and smaller budgets I work with WordPress, Webflow and Hubspot. My SEO skills
                         are solid, so you can be sure that your site will rank well on search engines.</p>
+                        <a href="#contact" class="btn">Hire me</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="row mb-4">
@@ -362,41 +361,68 @@ if(isset($_POST['button']))
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <a href="https://brandontran.com/images/cardboard-castle-10.jpg" data-effect="mfp-zoom-out">
-                                <img src="https://brandontran.com/images/cardboard-castle-10.jpg">
+                            <a href="img/portfolio/portfolio-design.webp" data-effect="mfp-zoom-out">
+                                <img src="img/portfolio/portfolio-design.webp">
                                 <div class="overlay">
-                                    <h3>Test</h3>
-                                    <p>Tralala</p>
+                                    <h3>Milan Nikolic</h3>
+                                    <p>Website Design and Development</p>
                                 </div>
                             </a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://brandontran.com/images/cardboard-castle-5.jpg" data-effect="mfp-zoom-out">
-                                <img src="https://brandontran.com/images/cardboard-castle-5.jpg">
+                            <a href="img/portfolio/insurance.webp" data-effect="mfp-zoom-out">
+                                <img src="img/portfolio/insurance.webp">
                                 <div class="overlay">
-                                    <h3>Test</h3>
-                                    <p>Tralala</p>
+                                    <h3>Sanzlife</h3>
+                                    <p>Website Design</p>
                                 </div>
                             </a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://brandontran.com/images/cardboard-castle-4.jpg" data-effect="mfp-zoom-out">
-                                <img src="https://brandontran.com/images/cardboard-castle-4.jpg">
+                            <a href="img/portfolio/belgrade.webp" data-effect="mfp-zoom-out">
+                                <img src="img/portfolio/belgrade.webp">
                                 <div class="overlay">
-                                    <h3>Test</h3>
-                                    <p>Tralala</p>
+                                    <h3>Belgrade</h3>
+                                    <p>Website Design</p>
                                 </div>
                             </a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://brandontran.com/images/cardboard-castle-3.jpg" data-effect="mfp-zoom-out">
-                                <img src="https://brandontran.com/images/cardboard-castle-3.jpg">
+                            <a href="img/portfolio/idvorsky-business-card.webp" data-effect="mfp-zoom-out">
+                                <img src="img/portfolio/idvorsky-business-card.webp">
                                 <div class="overlay">
-                                    <h3>Test</h3>
-                                    <p>Tralala</p>
+                                    <h3>Idvorsky</h3>
+                                    <p>Business Card Design</p>
                                 </div>
                             </a>
                         </li>
+                        <li class="splide__slide">
+                            <a href="img/portfolio/social-media.webp" data-effect="mfp-zoom-out">
+                                <img src="img/portfolio/social-media.webp">
+                                <div class="overlay">
+                                    <h3>BridTV</h3>
+                                    <p>Social Media Design</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="img/portfolio/dr-zutic.webp" data-effect="mfp-zoom-out">
+                                <img src="img/portfolio/dr-zutic.webp">
+                                <div class="overlay">
+                                    <h3>DrZutic</h3>
+                                    <p>www.drzutic.com</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="img/portfolio/medigen.webp" data-effect="mfp-zoom-out">
+                                <img src="img/portfolio/medigen.webp">
+                                <div class="overlay">
+                                    <h3>Medigen</h3>
+                                    <p>www.medigen.rs</p>
+                                </div>
+                            </a>
+                        </li>                     
                     </ul>
                 </div>
             </div>

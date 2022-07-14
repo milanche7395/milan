@@ -635,19 +635,6 @@ header {
 
     }
 
-    &::before {
-        content: '';
-        width: 770px;
-        height: 809px;
-        right: -40px;
-        top: -150px;
-        background: url(../../img/blob.svg) no-repeat;
-        background-position: 0 0;
-        background-size: cover;
-        position: absolute;
-        z-index: -1;
-    }
-
     p {
         font-size: 18px;
         line-height: 32px;
@@ -663,6 +650,20 @@ header {
             flex-basis: 0;
             position: relative;
 
+            
+    &::before {
+        content: "";
+        width: 770px;
+        height: 809px;
+        right: -100px;
+        top: -300px;
+        background: url(../../img/blob.svg) no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+    }
+
             .mn-img {
                 width: 100%;
                 height: auto;
@@ -673,16 +674,6 @@ header {
                 mask-repeat: no-repeat;
                 //mask-mode: alpha;
                 transition: $main-transition;
-            }
-
-            &:after {
-                content: '';
-                position: absolute;
-                bottom: 20px;
-                left: 40px;
-                width: 100%;
-                height: 300px;
-                background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 1) 80%, transparent 100%);
             }
 
             .circle {
@@ -1055,6 +1046,10 @@ header {
             text-align: left;
             margin-bottom: 20px;
         }
+
+        .btn{
+            margin-top: 10px;
+        }
     }
 
     p {
@@ -1153,6 +1148,7 @@ header {
                 display: block;
                 width: 100%;
                 border-radius: 30px;
+                box-shadow: 0 0 15px rgba(0,0,0, 0.15);
                 
             }
 
@@ -1197,13 +1193,8 @@ header {
 
             a {
                 position: relative;
-                overflow: hidden;
                 display: block;
                 transition: $main-transition;
-
-                img{
-                    transition: $main-transition;
-                }
 
                 .overlay {
                     opacity: 0;
@@ -1220,28 +1211,7 @@ header {
                     justify-content: center;
                     flex-direction: column;
                     transition: $main-transition;
-                    
-                    &:before{
-                        content: '';
-                        width: 96%;
-                        height: 92%;
-                        top:4%;
-                        left:2%;
-                        position: absolute;
-                        border-radius: 20px;
-                        border: 1px solid rgba(255, 255, 255, 0.4);
-                        transition: $main-transition;
-                        opacity: 0;
-                    }
-                    
-                    &:hover:before {
-                        width: 92%;
-                        height: 90%;
-                        top:5%;
-                        left:4%;
-                        opacity: 1;
-                        transition: $main-transition;
-                    }
+
                 }
 
                 &:hover .overlay {
@@ -1268,11 +1238,6 @@ header {
                 &:hover h3,
                 &:hover p{
                     transform: translateY(0px);
-                }
-
-                &:hover img{
-                    transform: scale(1.1);
-                    transition: $main-transition;
                 }
             }
         }
@@ -1334,11 +1299,11 @@ header {
     &:before {
         content: "";
         width: 100vw;
-        height: 140px;
+        height: 90px;
         background: url(../../img/wave.svg) no-repeat;
         background-size: cover;
         position: absolute;
-        top: -140px;
+        top: -90px;
     }
 
 
@@ -1352,18 +1317,19 @@ header {
             margin-bottom: 15px;
 
             .fa-solid {
-                color: $main-color;
+                color: #804eb7;
                 display: inline-block;
                 margin: 0 10px 0 0;
-                border: 2px solid $main-color;
+                border: 2px solid #804eb7;
                 padding: 5px;
-                border-radius: 5px;
+                font-size: 14px;
+                border-radius: 10px;
             }
 
             p {
                 display: inline;
                 margin-top: 5px;
-                line-height: 2;
+                line-height: 1.8;
             }
 
             .fa-location-dot {
