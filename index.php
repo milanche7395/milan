@@ -290,7 +290,7 @@ if(isset($_POST['button']))
                     <p>I use a wide range of techniques and tools to create high-quality websites and graphical design
                         projects. I work, with HTML5 / CSS3 / JavaScript, jQuery, VueJS and ReactJS.</p>
                     <p>For faster results and smaller budgets I work with WordPress, Webflow and Hubspot. My SEO skills
-                        are solid, so you can be sure that your site will rank well on search engines.</p>
+                        are solid, so you can be sure that your site will be well optimized for search engines.</p>
                         <a href="#contact" class="btn">Hire me</a>
                 </div>
                 <div class="col-lg-6">
