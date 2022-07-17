@@ -15,11 +15,11 @@ $(window).scroll(function () {
 $(document).ready(function () {
     sticky();
 
-    /*$(".preloader").addClass("active");
+    $(".preloader").addClass("active");
 
     setTimeout(function () {
         $(".preloader").fadeOut("slow");
-    }, 2000);*/
+    }, 2000);
 
 
     //   popup 
@@ -150,32 +150,18 @@ $('.button-social').click(function () {
 });
 
 /* Disabled Right Click */
-
-/*$("body").contextmenu(function () {
+$("body").contextmenu(function () {
     event.preventDefault();
-    $(this).addClass("active");
-    setTimeout(function() {
-        $("body").removeClass("active");
-    }, 820);
 });
 
 document.onkeydown = function (event) {
     event = (event || window.event);
     if (event.keyCode == 123) {
-        $("body").addClass("active");
-        setTimeout(function() {
-            $("body").removeClass("active");
-        }, 820);
-        return false;
+         return false;
     } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
-        $("body").addClass("active");
-        
-        setTimeout(function() {
-            $("body").removeClass("active");
-        }, 820);
         return false;
     }
-}*/
+}
 
 // Contact Validation Form
 function validateForm() {

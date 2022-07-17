@@ -85,7 +85,7 @@ if(isset($_POST['button']))
 </head>
 
 <body>
-    <!--<div class="preloader">
+    <div class="preloader">
             <div class="content">
                 <div class="milan">
                     <svg version="1.1" id="milan" xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@ if(isset($_POST['button']))
                 </div>
         </div>
 
-    </div>-->
+    </div>
 
     <div class="progress-holder">
         <div class="progress-container">
@@ -351,7 +351,7 @@ if(isset($_POST['button']))
                     <h2>Latest <span>work</span></h2>
                 </div>
                 <div class="col-xl-9">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eos. Voluptate a excepturi officia dicta ducimus! Nemo blanditiis laboriosam aut asperiores officiis. Libero distinctio, possimus nobis asperiores adipisci voluptate cupiditate!</p>
+                    <p class="portfolio-subline">Just a little sneak peek at my latest projects. If you want to see more, please contact me. <br>Due to NDA contracts, I am not allowed to show every project I worked on.</p>
                 </div>
             </div>
     </div>
@@ -435,9 +435,9 @@ if(isset($_POST['button']))
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="tagline">Get in Touch</span>
+                    <span class="tagline">Let's connect</span>
                     <h2>Contact <span>me</span></h2>
-                    <p>If you have any questions, fill up the form or you can contact me directly.</p>
+                    <p>If you have any questions, fill in the form or can contact me directly.</p>
                     <ul class="list-unstyled mb-0">
                         <li><i class="fa-solid fa-location-dot"></i> <p>Serbia, Belgrade</p>
                         </li>

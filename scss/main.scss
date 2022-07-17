@@ -97,13 +97,6 @@ body {
     overflow-x: hidden;
     position: relative;
 
-    &.active {
-        animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-        transform: translate3d(0, 0, 0);
-        backface-visibility: hidden;
-        perspective: 1000px;
-    }
-
     &:before {
         content: '';
         width: 100%;
@@ -115,29 +108,7 @@ body {
         background: linear-gradient(180deg, rgba(245, 241, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     }
 
-    @keyframes shake {
 
-        10%,
-        90% {
-            transform: translate3d(-1px, 0, 0);
-        }
-
-        20%,
-        80% {
-            transform: translate3d(2px, 0, 0);
-        }
-
-        30%,
-        50%,
-        70% {
-            transform: translate3d(-4px, 0, 0);
-        }
-
-        40%,
-        60% {
-            transform: translate3d(4px, 0, 0);
-        }
-    }
 }
 
 .social-holder {
@@ -208,44 +179,6 @@ body {
                 }
             }
         }
-    }
-}
-
-.right-click {
-    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
-    background: #fff;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    color: #000;
-    transition: .4s ease-in-out opacity;
-    opacity: 0;
-    display: flex;
-    visibility: hidden;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 999999;
-
-    &.active {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    img {
-        width: 260px;
-        height: auto;
-        margin-bottom: 20px;
-        margin-top: -250px;
-    }
-
-    .text {
-        font-size: 34px;
-        margin: 10px 0 10px;
-        font-weight: bold;
-        color: #000;
     }
 }
 
@@ -1137,6 +1070,11 @@ header {
             text-align: left;
         }
 
+        .portfolio-subline{
+            text-align: left;
+            padding-top: 15px;
+        }
+
     }
 
     .splide {
@@ -1630,6 +1568,7 @@ footer {
             .left {
                 padding-right: 0;
                 padding-top: 0;
+                margin-bottom: 40px;
             }
 
             .item {
@@ -1640,6 +1579,14 @@ footer {
         p {
             &:last-child {
                 margin-bottom: 40px;
+            }
+        }
+    }
+
+    .work{
+        .container{
+            .portfolio-subline{
+                text-align: center;
             }
         }
     }
