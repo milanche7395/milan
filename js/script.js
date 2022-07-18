@@ -92,7 +92,7 @@ $(document).ready(function () {
         var link = data.items[videoNumber].link;
         var title=data.items[videoNumber].title;
         id = link.substr(link.indexOf("=") + 1);
-        iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=1&autoplay=1");
+        iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=1&autoplay=0");
         }
     );
     }
