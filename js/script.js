@@ -170,7 +170,7 @@ $('.button-social').click(function () {
     $(".social-holder").toggleClass('active');
 });
 
-/* Disabled Right Click 
+/* Disabled Right Click */
 $("body").contextmenu(function () {
     event.preventDefault();
 });
@@ -182,7 +182,7 @@ document.onkeydown = function (event) {
     } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
         return false;
     }
-}*/
+}
 
 // Contact Validation Form
 function validateForm() {
