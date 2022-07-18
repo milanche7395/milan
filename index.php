@@ -146,6 +146,7 @@ if(isset($_POST['button']))
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#work">Work</a></li>
+                        <li><a href="#youtube">Youtube</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -431,7 +432,7 @@ if(isset($_POST['button']))
     </div>
     </section>
 
-    <section class="youtube">
+    <section class="youtube" id="youtube">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
