@@ -583,19 +583,19 @@ header {
             flex-basis: 0;
             position: relative;
 
-            
-    &::before {
-        content: "";
-        width: 770px;
-        height: 809px;
-        right: -100px;
-        top: -300px;
-        background: url(../../img/blob.svg) no-repeat;
-        background-position: 0 0;
-        background-size: cover;
-        position: absolute;
-        z-index: -1;
-    }
+
+            &::before {
+                content: "";
+                width: 770px;
+                height: 809px;
+                right: -100px;
+                top: -300px;
+                background: url(../../img/blob.svg) no-repeat;
+                background-position: 0 0;
+                background-size: cover;
+                position: absolute;
+                z-index: -1;
+            }
 
             .mn-img {
                 width: 100%;
@@ -980,7 +980,7 @@ header {
             margin-bottom: 20px;
         }
 
-        .btn{
+        .btn {
             margin-top: 10px;
         }
     }
@@ -1070,7 +1070,7 @@ header {
             text-align: left;
         }
 
-        .portfolio-subline{
+        .portfolio-subline {
             text-align: left;
             padding-top: 15px;
         }
@@ -1086,11 +1086,11 @@ header {
                 display: block;
                 width: 100%;
                 border-radius: 30px;
-                box-shadow: 0 0 15px rgba(0,0,0, 0.15);
-                
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+
             }
 
-            a{
+            a {
                 transition: transform 400ms;
                 transform: scale(0.9);
                 border-radius: 30px;
@@ -1139,7 +1139,7 @@ header {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    background: rgba(0,0,0,0.5);
+                    background: rgba(0, 0, 0, 0.5);
                     z-index: 99;
                     width: 100%;
                     height: 100%;
@@ -1163,18 +1163,19 @@ header {
                     transform: translateY(-20px);
                     transition: $main-transition;
                 }
-                h3{
+
+                h3 {
                     font-size: 24px;
                     margin-bottom: 10px;
                     font-weight: 600;
                 }
 
-                p{
+                p {
                     font-weight: 400;
                 }
 
                 &:hover h3,
-                &:hover p{
+                &:hover p {
                     transform: translateY(0px);
                 }
             }
@@ -1224,7 +1225,68 @@ header {
 
 }
 
+.youtube {
+    text-align: center;
+    padding: 80px 0;
+    background: url(../../img/video-bgd.svg) repeat-x;
+    background-size: 1%;
+    background-position-y: 55%;
 
+    .youtube-video {
+        width: 940px;
+        height: auto;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        position: relative;
+
+        &:before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            bottom: 15px;
+            left: 10px;
+            width: 50%;
+            top: 90%;
+            max-width: 300px;
+            background: #777;
+            -webkit-box-shadow: 0 15px 10px #a1a1a1;
+            -moz-box-shadow: 0 15px 10px #a1a1a1;
+            box-shadow: 0 15px 10px #a1a1a1;
+            -webkit-transform: rotate(-5deg);
+            -moz-transform: rotate(-5deg);
+            -o-transform: rotate(-5deg);
+            -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+        }
+
+        &:after {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            bottom: 15px;
+            right: 10px;
+            width: 50%;
+            top: 90%;
+            max-width: 300px;
+            background: #a1a1a1;
+            -webkit-box-shadow: 0 15px 10px #a1a1a1;
+            -moz-box-shadow: 0 15px 10px #a1a1a1;
+            box-shadow: 0 15px 10px #a1a1a1;
+            -webkit-transform: rotate(5deg);
+            -moz-transform: rotate(5deg);
+            -o-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+        }
+
+        iframe {
+            display: inline-block;
+            width: 940px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    }
+}
 
 
 .contact {
@@ -1583,12 +1645,29 @@ footer {
         }
     }
 
-    .work{
-        .container{
-            .portfolio-subline{
+    .work {
+        .container {
+            .portfolio-subline {
                 text-align: center;
             }
         }
+    }
+
+    .youtube {
+        background-size: 1.5%;
+        background-position-y: 60%;
+
+        .youtube-video {
+            width: 100%;
+            height: auto;
+
+            iframe {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16 / 9;
+            }
+        }
+
     }
 }
 

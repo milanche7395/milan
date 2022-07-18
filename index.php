@@ -431,6 +431,22 @@ if(isset($_POST['button']))
     </div>
     </section>
 
+    <section class="youtube">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="tagline">Like, share & Subscribe</span>
+                    <h2>Latest video <span>on youtube</span></h2>
+                    
+                    
+                    <div class="youtube-video">
+                        <iframe class="latestVideoEmbed" vnum='0' cid="UC2MsxHunJQJzAWdyXQ7LRxA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="contact" id="contact">
         <div class="container">
             <div class="row">
