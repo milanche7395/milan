@@ -146,6 +146,7 @@ if(isset($_POST['button']))
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#work">Work</a></li>
+                        <li><a href="#youtube">Youtube</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -429,6 +430,21 @@ if(isset($_POST['button']))
         </div>
 
     </div>
+    </section>
+
+    <section class="youtube" id="youtube">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="tagline">Like, share & Subscribe</span>
+                    <h2>Latest video <span>on youtube</span></h2>
+                    <div class="youtube-video">
+                        <iframe class="latestVideoEmbed" vnum='0' cid="UC2MsxHunJQJzAWdyXQ7LRxA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <a class="btn" href="https://www.youtube.com/channel/UC2MsxHunJQJzAWdyXQ7LRxA?sub_confirmation=1" target="_blank">Visit Channel</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
