@@ -439,7 +439,7 @@ if(isset($_POST['button']))
                     <h2>Contact <span>me</span></h2>
                     <p>If you have any questions, fill in the form or can contact me directly.</p>
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fa-solid fa-location-dot"></i> <p>Serbia, Belgrade</p>
+                        <li><i class="fa-solid fa-location-dot"></i> <p>Belgrade, Serbia</p>
                         </li>
 
                         <li><i class="fa-solid fa-phone"></i>
