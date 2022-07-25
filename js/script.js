@@ -170,20 +170,6 @@ $('.button-social').click(function () {
     $(".social-holder").toggleClass('active');
 });
 
-/* Disabled Right Click */
-$("body").contextmenu(function () {
-    event.preventDefault();
-});
-
-document.onkeydown = function (event) {
-    event = (event || window.event);
-    if (event.keyCode == 123) {
-         return false;
-    } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
-        return false;
-    }
-}
-
 // Contact Validation Form
 function validateForm() {
     var name = document.getElementById('name').value;

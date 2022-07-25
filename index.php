@@ -529,9 +529,7 @@ if(isset($_POST['button']))
                         <!--Grid row-->
 
                         <div>
-                                <input class="btn btn-primary" type="submit" name="button" value="Send"  onclick="validateForm();" class="g-recaptcha"
-                                data-sitekey="6Le4NIUgAAAAAA1bM1xSjzrPR00quSMx0iov9vVD" data-callback='onSubmit'
-                                data-action='submit'/>
+                            <input class="btn" type="submit" name="button" value="Send"  onclick="validateForm();">
                             <div class="status"></div>
                         </div>
                   
