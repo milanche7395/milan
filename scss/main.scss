@@ -341,11 +341,20 @@ header {
         ul {
             display: flex;
 
+            &:hover > li{
+                opacity: 0.2;
+            }
+
+            &:hover > li:hover{
+                opacity: 1;
+            }
+
             li {
-                margin-right: 36px;
+                padding-right: 36px;
+                transition: $main-transition;
 
                 &:last-child {
-                    margin-right: 0px;
+                    padding-right: 0px;
                 }
 
                 &:hover>ul {
@@ -1490,7 +1499,7 @@ footer {
                         color: $light;
 
                         &:hover {
-                            color: $main-color;
+                            color: $light;
                         }
                     }
                 }
