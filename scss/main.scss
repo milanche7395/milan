@@ -357,10 +357,6 @@ header {
                     padding-right: 0px;
                 }
 
-                &:hover>ul {
-                    opacity: 0.3;
-                }
-
                 a {
                     color: $dark;
                     text-transform: uppercase;
@@ -368,6 +364,10 @@ header {
                     overflow: hidden;
                     position: relative;
                     transition: $main-transition;
+
+                    &:hover{
+                        color: $dark;
+                    }
                 }
 
                 &.current {
