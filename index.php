@@ -179,7 +179,7 @@ if(isset($_POST['button']))
                     <img src="img/main-photo-color.webp" alt="Milan Nikolic" class="mn-img">
                     <div class="floating-icons">
                         <img class="adobexd" src="img/adobexd.svg" alt="">
-                        <img class="reactjs" src="img/reactjs.svg" alt="">
+                        <img class="figma" src="img/figma.svg" alt="">
                         <img class="photoshop" src="img/adobephotoshop.svg" alt="">
                         <img class="illustrator" src="img/adobeillustrator.svg" alt="">
                         <img class="javascript" src="img/javascript.svg" alt="">
