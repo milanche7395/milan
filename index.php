@@ -190,7 +190,7 @@ if(isset($_POST['button']))
         </div>
     </section>
 
-    <section id="about" class="about" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
+    <section id="about" class="about" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 pe-4 about-img">
@@ -282,7 +282,7 @@ if(isset($_POST['button']))
             </div>
     </section>
 
-    <section id="services" class="services" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
+    <section id="services" class="services" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row my-services">
                 <div class="col-lg-6 left">
@@ -344,7 +344,7 @@ if(isset($_POST['button']))
         </div>
     </section>
 
-    <section id="work" class="work" data-aos="fade" data-aos-delay="200" data-aos-duration="800">
+    <section id="work" class="work" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-xl-3">
@@ -432,7 +432,7 @@ if(isset($_POST['button']))
     </div>
     </section>
 
-    <section class="youtube" id="youtube">
+    <section class="youtube" id="youtube" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
