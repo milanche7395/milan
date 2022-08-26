@@ -588,6 +588,10 @@ header {
 
         p {
             margin-bottom: 30px;
+
+            span{
+                font-weight: 600;
+            }
         }
 
         .floating-icons {
@@ -612,10 +616,10 @@ header {
                 animation-duration: 5s;
             }
 
-            .figma {
-                top: 30px;
-                right: 90px;
-                width: 52px;
+            .reactjs {
+                top: 10px;
+                right: 50px;
+                width: 86px;
                 animation-name: float-2;
                 animation-delay: .2s;
                 animation-duration: 3s;

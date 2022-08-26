@@ -163,7 +163,7 @@ if(isset($_POST['button']))
                 <div class="col-lg-6">
                     <span class="tagline-headline">Hello, I am <strong>Milan Nikolić</strong></span>
                     <h1><span class="gradient-text">Web Developer & UI Designer</span></h1>
-                    <p>I am a frontend developer and UI designer, with over 15 years experience. I mainly work on frontend using HTML, CSS/SASS and JS Libraries. I use Adobe Suite to design mocks and illustrations. <br>Currently working at BridTV Company.</p>
+                    <p>I am a front-end developer and UI designer from Serbia, with over 15 years of experience. I use <span>HTML, CSS/SASS, ReactJS</span>, and <span>VueJS</span> to build websites and Applications, <span>Adobe Suite</span> and <span>Figma</span> to design mocks and illustrations.</p>
                     <a href="#about" class="btn">Show me more</a>
                     <h3></h3>
                 </div>
@@ -172,7 +172,7 @@ if(isset($_POST['button']))
                     <img src="img/main-photo-color.webp" alt="Milan Nikolic" class="mn-img">
                     <div class="floating-icons">
                         <img class="adobexd" src="img/adobexd.svg" alt="">
-                        <img class="figma" src="img/figma.svg" alt="">
+                        <img class="reactjs" src="img/reactjs.svg" alt="">
                         <img class="photoshop" src="img/adobephotoshop.svg" alt="">
                         <img class="illustrator" src="img/adobeillustrator.svg" alt="">
                         <img class="javascript" src="img/javascript.svg" alt="">
