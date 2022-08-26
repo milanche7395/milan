@@ -11,13 +11,6 @@ if(isset($_POST['button']))
   $subject   = $_POST["subject"]; //subject for the email
   $message   = $_POST["message"]; //body of the email
 
-  /*Always remember to validate the form fields like this
-  if(strlen($sender_name)<1)
-  {
-    die('Name is too short or empty!');
-  }
-  */
-
   $encoded_content = chunk_split(base64_encode($content));
   $boundary = md5("random"); // define boundary with a md5 hashed value
 
