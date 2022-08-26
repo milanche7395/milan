@@ -2,8 +2,8 @@
 
 if(isset($_POST['button']))
 {
-  $from_email     = 'mnikolic7395@gmail.com'; //from mail, sender email address
-  $recipient_email = 'milanche7395@gmail.com'; //recipient email address
+  $from_email     = $_POST["email"]; //from mail, sender email address
+  $recipient_email = 'mnikolic7395@gmail.com'; //recipient email address
   
   //Load POST data from HTML form
   $sender_name = $_POST["name"]; //sender name
